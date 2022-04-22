@@ -1,0 +1,30 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "uint256", "name": "amount", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "cumulativeLoss", "type": "uint256" }
+    ],
+    "name": "Loss",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "int256", "name": "stopoutEquity", "type": "int256" },
+      { "indexed": false, "internalType": "uint256", "name": "stopoutFunding", "type": "uint256" },
+      { "indexed": false, "internalType": "int256", "name": "finalBalance", "type": "int256" }
+    ],
+    "name": "Stopout",
+    "type": "event"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "customer", "type": "address" }],
+    "name": "stopout",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

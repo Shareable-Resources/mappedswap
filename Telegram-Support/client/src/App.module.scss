@@ -1,0 +1,141 @@
+.layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  border: 0px solid green;
+  height: 100%;
+}
+
+.nav {
+  border: 0px solid green;
+  flex-basis: 60px;
+  padding-top: 20px;
+}
+
+.nav > nav {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  row-gap: 10px;
+}
+
+nav > .navItem {
+  border: 1px solid green;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.main {
+  /* border: 1px solid green; */
+  flex-grow: 1;
+}
+
+.search_bar {
+  border: 3px red dashed;
+  height: 80px;
+}
+
+// .ticket_container {
+//   border: 1px solid red;
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: row;
+// }
+
+.ticket_list {
+  border: 1px solid green;
+  flex-basis: 320px;
+}
+.ticket_body {
+  border: 1px solid teal;
+  width: 55%;
+  // padding: 25px 20px 22px 20px;
+}
+.ticket_account {
+  height: 132px;
+  border: 1px solid purple;
+  p {
+    padding-right: 16px;
+  }
+  .ticket_account_detail {
+    display: flex;
+    max-height: 132px;
+    p {
+      font-size: 24px;
+    }
+  }
+  .ticket_account_user {
+    display: flex;
+  }
+  .ticket_account_user_section {
+    display: flex;
+    padding-right: 56px;
+  }
+}
+
+.ticket_main {
+  /* border: 1px solid green; */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.ticket_info_container {
+  /* border: 1px solid green; */
+  flex: 1;
+  display: flex;
+}
+
+.ticket_info_msg {
+  border: 1px solid green;
+  flex: 2;
+}
+
+.ticket_info_detail {
+  border: 1px solid green;
+  flex: 1;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

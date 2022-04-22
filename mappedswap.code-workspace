@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"path": "DeCATS-Agent"
+		},
+		{
+			"path": "DeCATS-backend"
+		},
+		{
+			"path": "DeCATS-DApp"
+		},
+		{
+			"path": "DeCATS-Observer"
+		},
+		{
+			"path": "DeCATS-contracts"
+		},
+		{
+			"path": "DeCATS-crypto-tools"
+		},
+		{
+			"path": "Gateway-Transfer"
+		},
+		{
+			"path": "Telegram-Support"
+		},
+		{
+			"path": "MappedSwap-Infrastructure"
+		},
+		{
+			"path": "telegram-bot"
+		},
+		{
+			"path": "price-robot"
+		},
+		{
+			"path": "Docusaurus-Documentation"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

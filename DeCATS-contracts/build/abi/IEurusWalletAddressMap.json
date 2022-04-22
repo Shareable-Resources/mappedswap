@@ -1,0 +1,80 @@
+[
+  {
+    "inputs": [
+      { "internalType": "address", "name": "walletAddress", "type": "address" },
+      { "internalType": "string", "name": "key", "type": "string" },
+      { "internalType": "string", "name": "value", "type": "string" }
+    ],
+    "name": "setWalletInfo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "walletAddress", "type": "address" },
+      { "internalType": "string", "name": "email", "type": "string" },
+      { "internalType": "bool", "name": "isMerchant", "type": "bool" },
+      { "internalType": "bool", "name": "isMetaMask", "type": "bool" }
+    ],
+    "name": "addWalletInfo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "walletAddress", "type": "address" }],
+    "name": "removeWalletInfo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "addr", "type": "address" }],
+    "name": "isWalletAddressExist",
+    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "addr", "type": "address" }],
+    "name": "isMerchantWallet",
+    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getWalletInfoList",
+    "outputs": [{ "internalType": "address[]", "name": "", "type": "address[]" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "addr", "type": "address" },
+      { "internalType": "string", "name": "field", "type": "string" }
+    ],
+    "name": "getWalletInfoValue",
+    "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "walletAddress", "type": "address" }],
+    "name": "getLastUpdateTime",
+    "outputs": [{ "internalType": "int256", "name": "", "type": "int256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "walletAddress", "type": "address" },
+      { "internalType": "int256", "name": "time", "type": "int256" }
+    ],
+    "name": "setLastUpdateTime",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "module": "esnext",
+    "esModuleInterop": true,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "outDir": "dist",
+    "listFiles": true,
+    "noEmitHelpers": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "forceConsistentCasingInFileNames": true,
+    "diagnostics": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "useUnknownInCatchVariables": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "__tests__",
+    "dist",
+    ".husky",
+    ".github",
+    ".vscode"
+  ],
+  "compileOnSave": true
+}

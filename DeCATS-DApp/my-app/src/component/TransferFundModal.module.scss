@@ -1,0 +1,386 @@
+@import "../style/variables.module.scss";
+
+#modal-container {
+  background-color: $black;
+  color: $white;
+  padding-bottom: 2vw;
+
+  @media only screen and (max-width: 960px) {
+    padding-bottom: 4vw;
+  }
+
+  .close-container {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    padding: 1vw 1vw 0 0;
+    * {
+      color: $white;
+    }
+  }
+
+  .title {
+    text-align: center;
+    color: $white;
+    font-weight: 800;
+    margin-bottom: 1vw;
+
+    @media only screen and (max-width: 960px) {
+      margin-bottom: 4vw;
+    }
+  }
+
+  .transfer-fund-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $bordergrey;
+    margin: 0 2vw 0 2vw;
+    border-radius: $borderRadius;
+
+    .card-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 1vw;
+      width: 1vw;
+      margin-right: 0.3vw;
+      @media only screen and (max-width: 960px) {
+        height: 5vw;
+        width: 5vw;
+        margin-right: 2vw;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    span {
+      color: $white;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .select-container {
+    display: flex;
+    justify-content: space-evenly;
+    color: $bordergrey;
+
+    div {
+      padding: 1vw 0 1vw 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px $bordergrey solid;
+      cursor: pointer;
+      color: $level2grey;
+
+      @media only screen and (max-width: 960px) {
+        padding: 3vw 0 3vw 0;
+      }
+    }
+
+    .active {
+      border-bottom: $blue solid 5px;
+      color: $white;
+    }
+  }
+
+  .detail-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    justify-content: space-around;
+
+    @media only screen and (max-width: 960px) {
+      padding: 4vw 2vw 4vw 2vw;
+    }
+
+    .card-container {
+      margin-bottom: 1vw;
+      display: flex;
+      flex-direction: column;
+
+      @media only screen and (max-width: 960px) {
+        margin-bottom: 2vw;
+      }
+
+      span {
+        color: $grey;
+        margin-bottom: 0.2vw;
+      }
+
+      .card-name {
+        display: flex;
+        flex-direction: column;
+
+        .li-hash {
+          color: $green;
+        }
+      }
+    }
+
+    .card-select {
+      display: flex;
+      border: solid 1px $bordergrey;
+      border-radius: $borderRadius;
+      // height: 3vw;
+      padding: 0.5vw 1vw 0.5vw 1vw;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      color: $white;
+
+      @media only screen and (max-width: 960px) {
+        width: 100%;
+        margin-bottom: 2vw;
+        border-radius: 5px;
+        padding: 2vw 4vw 2vw 4vw;
+      }
+
+      .token-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+
+        select:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .nohistory-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2vw 0 2vw 0;
+    }
+
+    .pagination-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1vw;
+      //    margin-bottom: 1vw;
+      @media only screen and (max-width: 960px) {
+        margin-top: 3.5vw;
+      }
+    }
+
+    .card-input {
+      width: 100%;
+      // height: 3vw;
+      padding: 0.5vw 1vw 0.5vw 1vw;
+      border: solid 1px $bordergrey;
+      border-radius: $borderRadius;
+      background-color: $darkgrey;
+      display: flex;
+
+      @media only screen and (max-width: 960px) {
+        padding: 2vw 4vw 2vw 4vw;
+        text-align: right;
+      }
+
+      .max {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $lightgrey;
+        padding: 0.2vw 0vw 0.2vw 0vw;
+        border-radius: $borderRadius;
+        cursor: pointer;
+        margin-left: 0.5vw;
+        font-size: $font4;
+        width: 6vw;
+
+        @media only screen and (max-width: 960px) {
+          // font-size: $font10;
+          width: 20vw;
+          margin-left: 2vw;
+          padding: 1vw 2vw 1vw 2vw;
+        }
+      }
+    }
+
+    .card-footer {
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 0.5vw;
+
+      @media only screen and (max-width: 960px) {
+        margin-top: 4vw;
+      }
+    }
+
+    .total-balance {
+      display: flex;
+      width: 100%;
+      span {
+        flex: 2;
+
+        @media only screen and (max-width: 960px) {
+          flex: 1;
+        }
+      }
+
+      span:first-child {
+        justify-content: flex-end;
+        flex: 1;
+      }
+    }
+
+    .red-info {
+      // display: flex;
+      // width: 100%;
+      // span {
+      //   justify-content: flex-end;
+      //   flex: 1;
+      // }
+      span {
+        font-size: $font3;
+        color: $red
+      }
+    }
+
+    .history-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5vw;
+
+      @media only screen and (max-width: 960px) {
+        padding: 3vw 0 3vw 0;
+      }
+
+      .type {
+        padding: 0 1vw 0 1vw;
+        background-color: $grey;
+        border-radius: $borderRadius;
+      }
+      .amount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: 960px) {
+          justify-content: flex-end;
+        }
+        span {
+          color: $blue;
+          margin-left: 0.3vw;
+        }
+      }
+    }
+  }
+
+  .border-none {
+    border: none;
+    align-items: flex-end;
+
+    .detail-hash {
+      width: 100%;
+      word-break: break-all;
+      color: $blue;
+      text-decoration: underline;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      max-width: 15vw;
+      text-align: right;
+
+      @media only screen and (max-width: 960px) {
+        max-width: 60vw;
+      }
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1vw;
+    color: $white;
+    font-weight: 800;
+
+    @media only screen and (max-width: 960px) {
+      margin-top: 2vw;
+      padding: 0;
+    }
+
+    .card-button {
+      display: flex;
+      justify-content: center;
+      @media only screen and (max-width: 960px) {
+        width: 100%;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      span {
+        text-align: center;
+        color: $white;
+        background-color: $green;
+        width: 10vw;
+        padding: 0.5vw 0 0.5vw 0;
+        border-radius: 5px;
+        cursor: pointer;
+        justify-content: center;
+
+        @media only screen and (max-width: 960px) {
+          width: 30vw;
+        }
+      }
+
+      .loading {
+        background-color: $red;
+      }
+    }
+
+    .card-button:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+input {
+  // background-color: $deepgrey;
+  border: none;
+  border-radius: 5px;
+  text-align: right;
+  color: $white;
+  padding-left: 2vw;
+  width: 100%;
+
+  @media only screen and (max-width: 960px) {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+input[type="number"] {
+  font-size: $font6;
+
+  @media only screen and (max-width: 960px) {
+    font-size: $font20;
+    width: fit-content;
+  }
+}
+input:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

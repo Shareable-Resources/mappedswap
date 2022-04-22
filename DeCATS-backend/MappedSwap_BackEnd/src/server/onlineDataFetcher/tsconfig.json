@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "../../../dist/tsc/build/onlineDataFetcher",
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node"
+  },
+  "include": ["../../foundation/*.ts", "*.ts"],
+  "exclude": ["node_modules"],
+  "extends": "../../../tsconfig.json",
+  "files": ["./smartcontract/v3-core-main/hardhat.config.ts"]
+}

@@ -1,0 +1,270 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "uint256", "name": "oldFunding", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "newFunding", "type": "uint256" }
+    ],
+    "name": "UpdateFunding",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "uint256", "name": "oldLeverage", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "newLeverage", "type": "uint256" }
+    ],
+    "name": "UpdateLeverage",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "int256", "name": "oldMode", "type": "int256" },
+      { "indexed": false, "internalType": "int256", "name": "newMode", "type": "int256" }
+    ],
+    "name": "UpdateMode",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": false, "internalType": "string", "name": "pairName", "type": "string" },
+      { "indexed": false, "internalType": "bool", "name": "oldEnableStatus", "type": "bool" },
+      { "indexed": false, "internalType": "bool", "name": "newEnableStatus", "type": "bool" }
+    ],
+    "name": "UpdatePairEnableStatus",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "int256", "name": "oldRiskLevel", "type": "int256" },
+      { "indexed": false, "internalType": "int256", "name": "newRiskLevel", "type": "int256" }
+    ],
+    "name": "UpdateRiskLevel",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "int256", "name": "oldStatus", "type": "int256" },
+      { "indexed": false, "internalType": "int256", "name": "newStatus", "type": "int256" }
+    ],
+    "name": "UpdateStatus",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": false, "internalType": "string", "name": "tokenName", "type": "string" },
+      { "indexed": false, "internalType": "uint256", "name": "oldEffectiveDecimal", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "newEffectiveDecimal", "type": "uint256" }
+    ],
+    "name": "UpdateTokenEffectiveDecimal",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": false, "internalType": "string", "name": "tokenName", "type": "string" },
+      { "indexed": false, "internalType": "uint256", "name": "oldInterestRate", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "oldEffectiveTime", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "newInterestRate", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "newEffectiveTime", "type": "uint256" }
+    ],
+    "name": "UpdateTokenInterestRate",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "getAllPairs",
+    "outputs": [{ "internalType": "string[]", "name": "", "type": "string[]" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllTokens",
+    "outputs": [{ "internalType": "string[]", "name": "", "type": "string[]" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "string", "name": "pairName", "type": "string" }],
+    "name": "getPairInfo",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "contract IUniswapV2Pair", "name": "pairAddr", "type": "address" },
+          { "internalType": "string", "name": "token0Name", "type": "string" },
+          { "internalType": "string", "name": "token1Name", "type": "string" },
+          { "internalType": "contract IERC20", "name": "token0Addr", "type": "address" },
+          { "internalType": "contract IERC20", "name": "token1Addr", "type": "address" },
+          { "internalType": "uint112", "name": "reserve0", "type": "uint112" },
+          { "internalType": "uint112", "name": "reserve1", "type": "uint112" },
+          { "internalType": "uint256", "name": "price0CumulativeLast", "type": "uint256" },
+          { "internalType": "uint256", "name": "price1CumulativeLast", "type": "uint256" },
+          { "internalType": "uint256", "name": "blockTimestampLast", "type": "uint256" },
+          { "internalType": "bool", "name": "enabled", "type": "bool" }
+        ],
+        "internalType": "struct PoolStruct.PairInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "string", "name": "tokenName", "type": "string" }],
+    "name": "getTokenInfo",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "contract IERC20", "name": "tokenAddr", "type": "address" },
+          {
+            "components": [
+              { "internalType": "uint256", "name": "value", "type": "uint256" },
+              { "internalType": "uint256", "name": "effectiveTime", "type": "uint256" }
+            ],
+            "internalType": "struct PoolStruct.InterestRate[]",
+            "name": "interestRates",
+            "type": "tuple[]"
+          },
+          { "internalType": "uint256", "name": "effectiveDecimal", "type": "uint256" }
+        ],
+        "internalType": "struct PoolStruct.Token",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "tokenName", "type": "string" },
+      { "internalType": "int256", "name": "limit", "type": "int256" }
+    ],
+    "name": "getTokenInterestHistory",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "uint256", "name": "value", "type": "uint256" },
+          { "internalType": "uint256", "name": "effectiveTime", "type": "uint256" }
+        ],
+        "internalType": "struct PoolStruct.InterestRate[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "customer", "type": "address" },
+      { "internalType": "int256", "name": "newMode", "type": "int256" },
+      { "internalType": "uint256", "name": "newLeverage", "type": "uint256" },
+      { "internalType": "uint256", "name": "newFunding", "type": "uint256" },
+      { "internalType": "int256", "name": "newRiskLevel", "type": "int256" },
+      { "internalType": "int256", "name": "newStatus", "type": "int256" }
+    ],
+    "name": "updateCustomerDetails",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "tokenName", "type": "string" },
+      { "internalType": "contract IERC20", "name": "tokenAddr", "type": "address" },
+      { "internalType": "uint256", "name": "interestRate", "type": "uint256" }
+    ],
+    "name": "addToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAgents",
+    "outputs": [{ "internalType": "address[]", "name": "", "type": "address[]" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "agentAddr", "type": "address" }],
+    "name": "grantAgent",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "agentAddr", "type": "address" }],
+    "name": "revokeAgent",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "tokenName", "type": "string" },
+      { "internalType": "uint256", "name": "newInterestRate", "type": "uint256" }
+    ],
+    "name": "updateTokenInterestRate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "tokenName", "type": "string" },
+      { "internalType": "uint256", "name": "newEffectiveDecimal", "type": "uint256" }
+    ],
+    "name": "updateTokenEffectiveDecimal",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "string", "name": "tokenName", "type": "string" }],
+    "name": "removeToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "tokenAName", "type": "string" },
+      { "internalType": "string", "name": "tokenBName", "type": "string" }
+    ],
+    "name": "addPair",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "pairName", "type": "string" },
+      { "internalType": "bool", "name": "newEnableStatus", "type": "bool" }
+    ],
+    "name": "updatePairEnableStatus",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "string", "name": "pairName", "type": "string" }],
+    "name": "removePair",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

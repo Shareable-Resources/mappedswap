@@ -1,0 +1,24 @@
+{
+    "1984": {
+        "smartContract": {
+            "OwnedBeaconProxy<USDM>": {
+                "address": "0x4a3eAB424DAbf855fC9F9Fe4469Ce2295d1EF043"
+            },
+            "OwnedBeaconProxy<BTCM>": {
+                "address": "0x939fDD4423396A9ee083519CCF8a25142f3e97dC"
+            },
+            "OwnedBeaconProxy<ETHM>": {
+                "address": "0x2e3266B417Bac1DefD9cEE72E71791201Eb197b9"
+            },
+            "OwnedUpgradeableProxy<Pool>": {
+                "address": "0x355414fe1DAd4ef0aAd51a17Ccba4165A6a1cCF8"
+            },
+            "PriceAdjust": {
+                "address": "0xd75c0F03Fb293B70dC4Df55A15a8faF7D911DE87"
+            },
+            "OwnedUpgradeableProxy<PriceAdjust>": {
+                "address": "0xA1e51d94d4d5e3b356C952C58778361da767aA89"
+            }
+        }
+    }
+}

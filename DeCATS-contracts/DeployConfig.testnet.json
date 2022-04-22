@@ -1,0 +1,142 @@
+{
+    "tokens": {
+        "minters": [
+            "0x9685419cD31BC382A804D2c4b0a053F0d4357fdF",
+            "0x39EB6463871040f75C89C67ec1dFCB141C3da1cf",
+            "0xd4e192E829D03292e22020d227AF982707BcEDb7"
+        ],
+        "burners": [
+            "0xa696ba68C17f190e484afEE2E671f74456ad03a7"
+        ],
+        "mintTo": {
+            "usdm": {
+                "0x9685419cD31BC382A804D2c4b0a053F0d4357fdF": "1000000000000000000000",
+                "0x39EB6463871040f75C89C67ec1dFCB141C3da1cf": "1000000000000000000000"
+            },
+            "btcm": {
+                "0x9685419cD31BC382A804D2c4b0a053F0d4357fdF": "1000000000000000000000000000",
+                "0x39EB6463871040f75C89C67ec1dFCB141C3da1cf": "1000000000000000000000000000"
+            },
+            "ethm": {
+                "0x9685419cD31BC382A804D2c4b0a053F0d4357fdF": "1000000000000000000000000000000",
+                "0x39EB6463871040f75C89C67ec1dFCB141C3da1cf": "1000000000000000000000000000000"
+            },
+            "mst": {
+                "0x39EB6463871040f75C89C67ec1dFCB141C3da1cf": "1000000000000000000000000000000"
+            }
+        }
+    },
+    "raijinSwap": {
+        "feeToSetter": "0x9685419cD31BC382A804D2c4b0a053F0d4357fdF",
+        "managers": [
+            "0x9685419cD31BC382A804D2c4b0a053F0d4357fdF"
+        ],
+        "selectedLPs": [
+            "0x39EB6463871040f75C89C67ec1dFCB141C3da1cf"
+        ]
+    },
+    "mappedSwap": {
+        "interestInterval": 900,
+        "agents": [
+            "0x01a6d1dD2171A45E6A3D3dc52952B40BE413fA93"
+        ],
+        "approvers": [
+            "0x9685419cD31BC382A804D2c4b0a053F0d4357fdF",
+            "0x8F9092CE573e41d72378Cf8c9d3335584e6843F1"
+        ],
+        "backends": [
+            "0x9685419cD31BC382A804D2c4b0a053F0d4357fdF",
+            "0xC1aD38C70688096FD4cCa89e224398e8A25ecbC6"
+        ],
+        "managers": [
+            "0x9685419cD31BC382A804D2c4b0a053F0d4357fdF",
+            "0x8F9092CE573e41d72378Cf8c9d3335584e6843F1"
+        ],
+        "interestRates": {
+            "usdm": 10000,
+            "btcm": 10000,
+            "ethm": 10000
+        },
+        "mintToPool": {
+            "usdm": "1000000000000000000000",
+            "btcm": "1000000000000000000000000000",
+            "ethm": "1000000000000000000000000000000"
+        }
+    },
+    "liquidity": {
+        "to": "0x39EB6463871040f75C89C67ec1dFCB141C3da1cf",
+        "btcmPool": {
+            "__comment__": "1B USDM, 27027 BTCM in pool, 1 BTCM ~= 37000 USDM",
+            "usdm": "1000000000000000",
+            "btcm": "27027000000000000000000"
+        },
+        "ethmPool": {
+            "__comment__": "1B USDM, 416666 ETHM in pool, 1 ETHM ~= 2400 USDM",
+            "usdm": "1000000000000000",
+            "ethm": "416666000000000000000000"
+        }
+    },
+    "priceAdjust": {
+        "backends": [
+            "0x6B45436Dd46091F58323C61BE93Af22A4fcf2d85",
+            "0x39EB6463871040f75C89C67ec1dFCB141C3da1cf"
+        ],
+        "managers": [
+            "0x9685419cD31BC382A804D2c4b0a053F0d4357fdF"
+        ]
+    },
+    "agentData": {
+        "inserters": [
+            "0x01a6d1dD2171A45E6A3D3dc52952B40BE413fA93"
+        ],
+        "updaters": [
+            "0x01a6d1dD2171A45E6A3D3dc52952B40BE413fA93"
+        ],
+        "approvers": [
+            "0x9685419cD31BC382A804D2c4b0a053F0d4357fdF",
+            "0x8F9092CE573e41d72378Cf8c9d3335584e6843F1"
+        ]
+    },
+    "staking": {
+        "redeemWaitPeriod": 60
+    },
+    "miningPool": {
+        "rewardPeriod": 180,
+        "redeemWaitPeriod": 60,
+        "lockPeriod": 600,
+        "pools": {
+            "__comment__": "All units are USDC, no decimal places here; it will be multiplied in deploy script",
+            "usd": {
+                "totalAnnualRewards": "120000000",
+                "capacity": "600000000"
+            },
+            "btc": {
+                "totalAnnualRewards": "40000000",
+                "capacity": "200000000"
+            },
+            "eth": {
+                "totalAnnualRewards": "40000000",
+                "capacity": "200000000"
+            }
+        },
+        "withdrawers": [
+            "0x8F9092CE573e41d72378Cf8c9d3335584e6843F1"
+        ]
+    },
+    "mappedSwapOwner": {
+        "owners": [
+            "0x9685419cD31BC382A804D2c4b0a053F0d4357fdF",
+            "0x39EB6463871040f75C89C67ec1dFCB141C3da1cf",
+            "0x01a6d1dD2171A45E6A3D3dc52952B40BE413fA93"
+        ],
+        "required": 1
+    },
+    "raijinSwapOwner": {
+        "owners": [
+            "0x9685419cD31BC382A804D2c4b0a053F0d4357fdF",
+            "0x39EB6463871040f75C89C67ec1dFCB141C3da1cf",
+            "0x01a6d1dD2171A45E6A3D3dc52952B40BE413fA93"
+        ],
+        "required": 1
+    }
+}

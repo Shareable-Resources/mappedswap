@@ -1,0 +1,571 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "command": "npm start",
+      "name": "Run npm start",
+      "request": "launch",
+      "type": "node-terminal",
+      "outputCapture": "std"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "Test",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/cronJob/test.ts",
+      // "program": "${workspaceFolder}/src/server/agent/EncryptionDetailTool.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "local"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+      // "args": ["hN6f*hH7P31rE+qdCJjTz84=B&6aoZ@T", "D5oN+T2M%6Mn20kC"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Local] Agent Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/agent/index.ts",
+      // "program": "${workspaceFolder}/src/server/agent/EncryptionDetailTool.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "local"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+      // "args": ["hN6f*hH7P31rE+qdCJjTz84=B&6aoZ@T", "D5oN+T2M%6Mn20kC"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Local] DApp Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/dApp/index.ts",
+      // "program": "${workspaceFolder}/src/server/dApp/EncryptionDetailTool.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "local"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Local] Cron Job Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/cronJob/index.ts",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "local"
+      },
+      "console": "integratedTerminal",
+      "preLaunchTask": "debugService"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Local] Online Data Fetcher",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/onlineDataFetcher/index.ts",
+      // "program": "${workspaceFolder}/src/server/onlineDataFetcher/EncryptionDetailTool.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "outputCapture": "std",
+      "env": {
+        "NODE_ENV": "local"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Local] Mining Rewards Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/miningRewards/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "local"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Local] Profit Daily Report Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/profitDailyReport/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "local"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Dev] Agent Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/agent/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "dev"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Dev] DApp Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/dApp/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "dev"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Dev] Cron Job Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/cronJob/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "dev"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Dev] Online Data Fetcher",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/onlineDataFetcher/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "outputCapture": "std",
+      "env": {
+        "NODE_ENV": "dev"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Dev] Mining Rewards Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/miningRewards/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "dev"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Dev] Profit Daily Report Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/profitDailyReport/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "dev"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Dev] Event Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/event/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "dev"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Testnet] Event Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/event/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "testnet"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Testnet] Agent Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/agent/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "testnet"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Testnet] DApp Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/dApp/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "testnet"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Testnet] Cron Job Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/cronJob/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "testnet"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Testnet] Online Data Fetcher",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/onlineDataFetcher/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "outputCapture": "std",
+      "env": {
+        "NODE_ENV": "testnet"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Testnet] Mining Rewards Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/miningRewards/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "testnet"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Testnet] Profit Daily Report Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/profitDailyReport/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "testnet"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Mainnet] Agent Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/agent/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "mainnet"
+      },
+      "console": "integratedTerminal"
+      // "args": ["hN6f*hH7P31rE+qdCJjTz84=B&6aoZ@T", "D5oN+T2M%6Mn20kC"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Mainnet] DApp Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/dApp/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "mainnet"
+      },
+      "console": "integratedTerminal"
+      // "args": ["hN6f*hH7P31rE+qdCJjTz84=B&6aoZ@T", "D5oN+T2M%6Mn20kC"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Mainnet] Cron Job Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/cronJob/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "mainnet"
+      },
+      "console": "integratedTerminal"
+      // "args": ["hN6f*hH7P31rE+qdCJjTz84=B&6aoZ@T", "D5oN+T2M%6Mn20kC"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Mainnet] Online Data Fetcher",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/onlineDataFetcher/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "outputCapture": "std",
+      "env": {
+        "NODE_ENV": "mainnet"
+      },
+      "console": "integratedTerminal"
+      // "args": ["hN6f*hH7P31rE+qdCJjTz84=B&6aoZ@T", "D5oN+T2M%6Mn20kC"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Mainnet] Mining Rewards Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/miningRewards/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "mainnet"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Mainnet] Profit Daily Report Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/profitDailyReport/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "mainnet"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Mainnet] Event Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/server/event/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "env": {
+        "NODE_ENV": "mainnet"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Local] Init DB",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/general/CreateTable.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "outputCapture": "std",
+      "env": {
+        "NODE_ENV": "local",
+        "initDbMode": "normal"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Local] Init DB (Report)",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/general/CreateTable.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "outputCapture": "std",
+      "env": {
+        "NODE_ENV": "local",
+        "initDbMode": "report"
+      },
+      "console": "integratedTerminal"
+      // "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "mode": "debug",
+      "name": "[Test] EncryptTool",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/foundation/tools/EncryptTool.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+      "outputCapture": "std",
+      "console": "integratedTerminal",
+      "env": {
+        "NODE_ENV": "local"
+      }
+    }
+
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "mode": "debug",
+    //   "name": "[Test] EncryptionDetailTool",
+    //   "skipFiles": ["<node_internals>/**"],
+    //   "program": "${workspaceFolder}/src/server/agent/index.ts",
+    //   "preLaunchTask": "tsc: build - tsconfig.json",
+    //   "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+    //   "outputCapture": "std",
+    //   "console": "integratedTerminal",
+    //   "env": {
+    //     "NODE_ENV": "local"
+    //   }
+    //   // , "args": ["YiGX3h##iw=gaTQz%-XTL&Zyq,qw_d2E", "z?A:F$]@uLx*Z-&C"]
+    // }
+
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "mode": "debug",
+    //   "name": "[dev] Init DB",
+    //   "skipFiles": ["<node_internals>/**"],
+    //   "program": "${workspaceFolder}/src/general/script/CreateTable.ts",
+    //   "preLaunchTask": "tsc: build - tsconfig.json",
+    //   "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+    //   "outputCapture": "std",
+    //   "env": {
+    //     "NODE_ENV": "dev"
+    //   }
+    // }
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "mode": "debug",
+    //   "name": "[Testnet] Init DB",
+    //   "skipFiles": ["<node_internals>/**"],
+    //   "program": "${workspaceFolder}/src/general/script/CreateTable.ts",
+    //   "preLaunchTask": "tsc: build - tsconfig.json",
+    //   "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+    //   "outputCapture": "std",
+    //   "env": {
+    //     "NODE_ENV": "testnet"
+    //   }
+    // }
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "mode": "debug",
+    //   "name": "[Mainnet] Init DB",
+    //   "skipFiles": ["<node_internals>/**"],
+    //   "program": "${workspaceFolder}/src/general/script/CreateTable.ts",
+    //   "preLaunchTask": "tsc: build - tsconfig.json",
+    //   "outFiles": ["${workspaceFolder}/dist/tsc/debug/**/*.js"],
+    //   "outputCapture": "std",
+    //   "env": {
+    //     "NODE_ENV": "mainnet"
+    //   },
+    //   "args": ["hN6f*hH7P31rE+qdCJjTz84=B&6aoZ@T", "D5oN+T2M%6Mn20kC"]
+    // }
+  ]
+}

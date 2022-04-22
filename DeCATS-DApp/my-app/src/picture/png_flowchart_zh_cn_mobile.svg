@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="323" height="460" viewBox="0 0 323 460">
+  <g id="Group_11790" data-name="Group 11790" transform="translate(19439 -6697)">
+    <g id="Rectangle_492" data-name="Rectangle 492" transform="translate(-19349 6697)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+      <rect width="136" height="102" stroke="none"/>
+      <rect x="0.5" y="0.5" width="135" height="101" fill="none"/>
+    </g>
+    <g id="Rectangle_493" data-name="Rectangle 493" transform="translate(-19438 6893)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+      <rect width="136" height="101" stroke="none"/>
+      <rect x="0.5" y="0.5" width="135" height="100" fill="none"/>
+    </g>
+    <g id="Rectangle_494" data-name="Rectangle 494" transform="translate(-19252 6894)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+      <rect width="136" height="100" stroke="none"/>
+      <rect x="0.5" y="0.5" width="135" height="99" fill="none"/>
+    </g>
+    <g id="Rectangle_495" data-name="Rectangle 495" transform="translate(-19439 7056)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+      <rect width="136" height="101" stroke="none"/>
+      <rect x="0.5" y="0.5" width="135" height="100" fill="none"/>
+    </g>
+    <text id="用戶A_自身_0交易量" data-name="用戶A
+自身$0交易量" transform="translate(-19281 6745)" fill="#fff" font-size="10" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="-13.225" y="0">用戶</tspan><tspan y="0" font-family="SegoeUI, Segoe UI">A</tspan><tspan x="-30.391" y="14">自身</tspan><tspan y="14" font-family="SegoeUI, Segoe UI">$0</tspan><tspan y="14">交易量</tspan></text>
+    <text id="用户B_自身_150K交易量_手续费_450_利息_50" data-name="用户B
+自身$150K交易量/
+手续费$450＋利息$50" transform="translate(-19370 6931)" fill="#fff" font-size="10" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="-12.866" y="0">用</tspan><tspan y="0" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI">户</tspan><tspan y="0" font-family="SegoeUI, Segoe UI">B</tspan><tspan x="-40.63" y="14">自身</tspan><tspan y="14" font-family="SegoeUI, Segoe UI">$150K</tspan><tspan y="14">交易量</tspan><tspan y="14" font-family="SegoeUI, Segoe UI">/</tspan><tspan x="-48.867" y="28">手</tspan><tspan y="28" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI">续费</tspan><tspan y="28" font-family="SegoeUI, Segoe UI">$450</tspan><tspan y="28">＋利息</tspan><tspan y="28" font-family="SegoeUI, Segoe UI">$50</tspan></text>
+    <text id="用户C_自身_400K交易量_手续费_1200_利息_100" data-name="用户C
+自身$400K交易量/
+手续费$1200＋利息$100" transform="translate(-19184 6931)" fill="#fff" font-size="10" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="-13.096" y="0">用</tspan><tspan y="0" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI">户</tspan><tspan y="0" font-family="SegoeUI, Segoe UI">C</tspan><tspan x="-40.63" y="14">自身</tspan><tspan y="14" font-family="SegoeUI, Segoe UI">$400K</tspan><tspan y="14">交易量</tspan><tspan y="14" font-family="SegoeUI, Segoe UI">/</tspan><tspan x="-54.258" y="28">手</tspan><tspan y="28" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI">续费</tspan><tspan y="28" font-family="SegoeUI, Segoe UI">$1200</tspan><tspan y="28">＋利息</tspan><tspan y="28" font-family="SegoeUI, Segoe UI">$100</tspan></text>
+    <text id="用户D_自身1K交易量_手续费_30_利息_5" data-name="用户D
+自身1K交易量/
+手续费$30＋利息$5" transform="translate(-19370 7093)" fill="#fff" font-size="10" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="-13.506" y="0">用</tspan><tspan y="0" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI">户</tspan><tspan y="0" font-family="SegoeUI, Segoe UI">D</tspan><tspan x="-32.544" y="14">自身</tspan><tspan y="14" font-family="SegoeUI, Segoe UI">1K</tspan><tspan y="14">交易量</tspan><tspan y="14" font-family="SegoeUI, Segoe UI">/</tspan><tspan x="-43.477" y="28">手</tspan><tspan y="28" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI">续费</tspan><tspan y="28" font-family="SegoeUI, Segoe UI">$30</tspan><tspan y="28">＋利息</tspan><tspan y="28" font-family="SegoeUI, Segoe UI">$5</tspan></text>
+    <path id="Path_9992" data-name="Path 9992" d="M94,0H27.183L0,106.747" transform="translate(-19176.254 6799) rotate(90)" fill="none" stroke="#3a3f4e" stroke-width="1"/>
+    <path id="Path_9993" data-name="Path 9993" d="M94,96.655H27.183L0,0" transform="translate(-19280.697 6799) rotate(90)" fill="none" stroke="#3a3f4e" stroke-width="1"/>
+    <rect id="Rectangle_496" data-name="Rectangle 496" width="57" height="29" transform="translate(-19406 6834)" fill="#5d6676"/>
+    <text id="推荐" transform="translate(-19377 6854)" fill="#fff" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="-14" y="0">推荐</tspan></text>
+    <rect id="Rectangle_497" data-name="Rectangle 497" width="57" height="29" transform="translate(-19205 6834)" fill="#5d6676"/>
+    <text id="推荐-2" data-name="推荐" transform="translate(-19176 6854)" fill="#fff" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="-14" y="0">推荐</tspan></text>
+    <line id="Line_221" data-name="Line 221" y2="62" transform="translate(-19373.5 6994.5)" fill="none" stroke="#3a3f4e" stroke-width="1"/>
+    <rect id="Rectangle_498" data-name="Rectangle 498" width="57" height="29" transform="translate(-19402 7011)" fill="#5d6676"/>
+    <text id="推荐-3" data-name="推荐" transform="translate(-19373 7030)" fill="#fff" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="-14" y="0">推荐</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+AWS/Terraform-PROD/variables.tf
+AWS/Terraform-PROD/ResourceGroup/variables.tf
+AWS/Terraform-PROD/ResourceGroup/.terraform/
+../.DS_Store
+Terraform-DEV/.DS_Store
+Terraform-mainnet/.DS_Store
+Terraform-testnet/.DS_Store

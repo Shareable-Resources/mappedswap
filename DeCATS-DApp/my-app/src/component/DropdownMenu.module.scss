@@ -1,0 +1,53 @@
+@import "../style/variables.module.scss";
+
+.sub-menu {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $deepbluegrey;
+  right: 1vw;
+  border-radius: $borderRadius;
+  width: 250px;
+
+  .token-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    .card-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 1vw;
+      @media only screen and (max-width: 960px) {
+        height: fit-content;
+        margin-right: 0vw;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+
+        @media only screen and (max-width: 960px) {
+          width: 80%;
+          height: 80%;
+        }
+      }
+    }
+    span {
+      margin-left: 0.5vw;
+    }
+  }
+
+  .top {
+    border-bottom: 1px $grey solid;
+  }
+}
+
+.active-sub-menu {
+  display: flex;
+}

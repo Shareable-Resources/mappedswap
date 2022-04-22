@@ -1,0 +1,92 @@
+{
+    "tokens": {
+        "minters": [
+            "0xdcD5AD3f160cA4F2c7b9c716C2b1725D2385CaEc"
+        ],
+        "burners": [
+            "0xBb5eE295BB1fcbc14D46a4cC428BDBef2848A6eD"
+        ],
+        "mintTo": {
+            "usdm": {},
+            "btcm": {},
+            "ethm": {},
+            "mst": {}
+        }
+    },
+    "raijinSwap": {
+        "feeToSetter": "0x8e1c5dA50FD4aa5b5D2cBA2ee85e04d34509beF8",
+        "managers": [
+            "0x8e1c5dA50FD4aa5b5D2cBA2ee85e04d34509beF8"
+        ],
+        "selectedLPs": [
+            "0x1c14BF0B628743eD061EC0A52a5fe1F3fE26BDC0"
+        ]
+    },
+    "mappedSwap": {
+        "interestInterval": 3600,
+        "agents": [
+            "0xbFd01CBeAf885e67e7311cF22EEB859471c9f19c",
+            "0x11B6E54E04645813C3dC755953b53328B7d81529",
+            "0x3b949f8Dd6f6f7aF506FA5C6D46144D1597cb287"
+        ],
+        "approvers": [
+            "0xbFd01CBeAf885e67e7311cF22EEB859471c9f19c",
+            "0x187537e171EB50bf9223fb4658B2821B10A6676D"
+        ],
+        "backends": [
+            "0xf36BC32929bD140F5326839D36E75cf28D5C63a9"
+        ],
+        "managers": [
+            "0xbFd01CBeAf885e67e7311cF22EEB859471c9f19c",
+            "0x187537e171EB50bf9223fb4658B2821B10A6676D"
+        ],
+        "interestRates": {
+            "usdm": 11400,
+            "btcm": 11400,
+            "ethm": 11400
+        },
+        "mintToPool": {}
+    },
+    "liquidity": {
+        "to": "0x1c14BF0B628743eD061EC0A52a5fe1F3fE26BDC0",
+        "btcmPool": {},
+        "ethmPool": {}
+    },
+    "priceAdjust": {
+        "backends": [
+            "0x227460d406f0937Ecd982b20CFff5a92E7fc4c2b"
+        ],
+        "managers": [
+            "0xbFd01CBeAf885e67e7311cF22EEB859471c9f19c"
+        ]
+    },
+    "agentData": {
+        "inserters": [
+            "0x3b949f8Dd6f6f7aF506FA5C6D46144D1597cb287",
+            "0x11B6E54E04645813C3dC755953b53328B7d81529"
+        ],
+        "updaters": [
+            "0x3b949f8Dd6f6f7aF506FA5C6D46144D1597cb287"
+        ],
+        "approvers": [
+            "0x187537e171EB50bf9223fb4658B2821B10A6676D"
+        ]
+    },
+    "staking": {
+        "redeemWaitPeriod": 604800
+    },
+    "mappedSwapOwner": {
+        "owners": [
+            "0xbFd01CBeAf885e67e7311cF22EEB859471c9f19c",
+            "0x1BA1DeD9419f94E3C761DE640657B382eF4f43F8"
+        ],
+        "required": 1
+    },
+    "raijinSwapOwner": {
+        "owners": [
+            "0x8e1c5dA50FD4aa5b5D2cBA2ee85e04d34509beF8",
+            "0x41AA0961ECAFc9B731f6B5A091Ef1a6578343c62"
+        ],
+        "required": 1
+    }
+}

@@ -1,0 +1,4 @@
+[TAILING] Tailing last 1 lines for [agent] process (change the value with --lines option)
+/Users/vince/.pm2/logs/agent-out.log last 1 lines:
+0|agent    | [33m[1m[37minfo[33m[22m[39m: localhost:8094/miningRewards/getAllLedger  (GET) {"timestamp":"2022-01-05T07:48:46.034Z"}
+

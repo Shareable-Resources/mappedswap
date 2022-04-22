@@ -1,0 +1,459 @@
+# bot settings
+bot_token: "5009170654:AAHWAJUYOB4NkF4e38NzDRruOdRAR-mTFIM" # support bot tok                                                                                                             en
+staffchat_id: "-657195962" # eg. -657195962
+owner_id: "922604642"
+spam_time: 5 * 60 * 1000 # time (in MS) in which user may send 5 messages
+
+allow_private: false # Allow / disallow option for staff to chat privately
+direct_reply: false # Set this to true to just forward staff users to a user chat when allow_private
+
+auto_close_tickets: false # Close tickets after answering
+anonymous_tickets: true # Include userid in tickets or not
+
+signal_enabled: false # Enable/disable signal
+signal_number: '+12345689' # Your signal number / account
+
+web_server: false # Enable/disable web server
+web_server_port: 8080 # Port for web server
+web_server_ssl_cert: '../src/web/ssl.crt' # Path for SSL cert
+web_server_ssl_key: '../src/web/ssl.key' # Path for SSL key
+
+dev_mode: false # Enable/disable dev mode
+
+# customize your menus
+menus:
+    langMenu:
+      {
+          reply_markup: {
+              inline_keyboard:
+                [
+                    [ { text: "English", callback_data: "eng" }, ],
+                    [ { text: "中文", callback_data: "chn" }, ]
+                ]
+          }
+      }
+    mainMenu:
+        {
+            reply_markup: {
+                inline_keyboard:
+                [
+                    [{text: "Frequently Asked Questions", callback_data: "general"},],
+                    [{text: "Need Live Support? Just click here!", callback_data: "live support"},]
+                ]
+            }
+        }
+    goback_mainMenu:
+        {
+            reply_markup: {
+                inline_keyboard:
+                  [
+                      [
+                          { text: "Go Back", callback_data: "eng" },
+                      ]
+                  ]
+            }
+        }
+    general_menu:
+        {
+            reply_markup: {
+                inline_keyboard:
+                [
+                    [
+                        { text: "Account", callback_data: "account" },
+                        { text: "Trade", callback_data: "trade" },
+                        { text: "Referral", callback_data: "referral" },
+                    ],
+                    [
+                        { text: "Go Back", callback_data: "return" },
+                    ]
+                ]
+            }
+        }
+    goback_general:
+        {
+            reply_markup: {
+                inline_keyboard:
+                [
+                    [
+                        { text: "Go Back", callback_data: "general" },
+                    ]
+                ]
+            }
+        }
+    account_menu:
+      {
+          reply_markup: {
+              inline_keyboard: [
+                  [
+                      { text: "❓How to create an Eurus wallet?", callback_data: "accountQ1" },
+                  ],
+                  [
+                      { text: "❓How to create a MetaMask wallet?", callback_data: "accountQ2" },
+                  ],
+                  [
+                      { text: "❓How to connect my wallet to MappedSwap account?", callback_data: "accountQ3" },
+                  ],
+                  [
+                      { text: "Go Back", callback_data: "general" },
+                  ]
+              ]
+          }
+      }
+    goback_account:
+      {
+          reply_markup: {
+              inline_keyboard: [
+                  [
+                      { text: "Go Back", callback_data: "account" },
+                  ]
+              ]
+          }
+      }
+    trade_menu:
+      {
+          reply_markup: {
+              inline_keyboard: [
+                  [
+                      { text: "❓Why can't I see my Mapped Tokens in my MetaMask wallet? ", callback_data: "tradeQ0" },
+                  ],
+                  [
+                      { text: "❓How can I get the EUN? ", callback_data: "tradeQ01" },
+                  ],
+                  [
+                      { text: "❓Why can't I buy BTCM/ETHM on MappedSwap? ", callback_data: "tradeQ1" },
+                  ],
+                  [
+                      { text: "❓How much amount can I borrow from MappedSwap?", callback_data: "tradeQ2" },
+                  ],
+                  [
+                      { text: "❓How much will MappedSwap charge per transaction?", callback_data: "tradeQ3" },
+                  ],
+                  [
+                      { text: "❓Why can't I withdraw from MappedSwap account to my wallet? ", callback_data: "tradeQ4" },
+                  ],
+                  [
+                      { text: "❓How to BUY USDM/BTCM/ETHM?", callback_data: "tradeQ5" },
+                  ],
+                  [
+                      { text: "❓How to SELL USDM/BTCM/ETHM?", callback_data: "tradeQ6" },
+                  ],
+                  [
+                      { text: "Go Back", callback_data: "general" },
+                  ]
+              ]
+          }
+      }
+    goback_trade:
+      {
+          reply_markup: {
+              inline_keyboard: [
+                  [
+                      { text: "Go Back", callback_data: "trade" },
+                  ]
+              ]
+          }
+      }
+    referral_menu:
+      {
+          reply_markup: {
+              inline_keyboard: [
+                  [
+                      { text: "❓How does the referral program work?", callback_data: "referralQ1" },
+                  ],
+                  [
+                      { text: "❓How can I get a referral code?", callback_data: "referralQ2" },
+                  ],
+                  [
+                      { text: "Go Back", callback_data: "general" },
+                  ]
+              ]
+          }
+      }
+    goback_referral:
+      {
+          reply_markup: {
+              inline_keyboard: [
+                  [
+                      { text: "Go Back", callback_data: "referral" },
+                  ]
+              ]
+          }
+      }
+    mainMenu_chn:
+      {
+          reply_markup: {
+              inline_keyboard:
+                [
+                    [ { text: "常见问题与回答", callback_data: "general_chn" }, ],
+                    [ { text: "点击此处，联系即时客服", callback_data: "live support_chn" }, ]
+                ]
+          }
+      }
+    goback_mainMenu_chn:
+      {
+          reply_markup: {
+              inline_keyboard:
+                [
+                    [
+                        { text: "返回", callback_data: "chn" },
+                    ]
+                ]
+          }
+      }
+    general_menu_chn:
+      {
+          reply_markup: {
+              inline_keyboard:
+                [
+                    [
+                        { text: "账户", callback_data: "account_chn" },
+                        { text: "交易", callback_data: "trade_chn" },
+                        { text: "推荐", callback_data: "referral_chn" },
+                    ],
+                    [
+                        { text: "返回", callback_data: "return_chn" },
+                    ]
+                ]
+          }
+      }
+    goback_general_chn:
+      {
+          reply_markup: {
+              inline_keyboard:
+                [
+                    [
+                        { text: "返回", callback_data: "general_chn" },
+                    ]
+                ]
+          }
+      }
+    account_menu_chn:
+      {
+          reply_markup: {
+              inline_keyboard: [
+                  [
+                      { text: "❓如何建立Eurus钱包？", callback_data: "accountQ1_chn" },
+                  ],
+                  [
+                      { text: "❓如何建立MetaMask钱包？", callback_data: "accountQ2_chn" },
+                  ],
+                  [
+                      { text: "❓如何连结我的钱包和MappedSwap账户？", callback_data: "accountQ3_chn" },
+                  ],
+                  [
+                      { text: "返回", callback_data: "general_chn" },
+                  ]
+              ]
+          }
+      }
+    goback_account_chn:
+      {
+          reply_markup: {
+              inline_keyboard: [
+                  [
+                      { text: "返回", callback_data: "account_chn" },
+                  ]
+              ]
+          }
+      }
+    trade_menu_chn:
+      {
+          reply_markup: {
+              inline_keyboard: [
+                  [
+                      { text: "❓为什麽在MetaMask钱包中，无法看见M代币资产与馀额？", callback_data: "tradeQ0_chn" },
+                  ],
+                  [
+                      { text: "❓如何取得EUN?", callback_data: "tradeQ01_chn" },
+                  ],
+                  [
+                      { text: "❓为什麽我不能买BTCM/ETHM?", callback_data: "tradeQ1_chn" },
+                  ],
+                  [
+                      { text: "❓我可以从MappedSwap借贷多少额度？", callback_data: "tradeQ2_chn" },
+                  ],
+                  [
+                      { text: "❓MappedSwap每笔交易收取多少交易费？", callback_data: "tradeQ3_chn" },
+                  ],
+                  [
+                      { text: "❓为什么我的资产无法从MappedSwap帐户划转至我的钱包？", callback_data: "tradeQ4_chn" },
+                  ],
+                  [
+                      { text: "❓如何买入USDM/BTCM/ETHM?", callback_data: "tradeQ5_chn" },
+                  ],
+                  [
+                      { text: "❓如何卖出 USDM/BTCM/ETHM?", callback_data: "tradeQ6_chn" },
+                  ],
+                  [
+                      { text: "返回", callback_data: "general_chn" },
+                  ]
+              ]
+          }
+      }
+    goback_trade_chn:
+      {
+          reply_markup: {
+              inline_keyboard: [
+                  [
+                      { text: "返回", callback_data: "trade_chn" },
+                  ]
+              ]
+          }
+      }
+    referral_menu_chn:
+      {
+          reply_markup: {
+              inline_keyboard: [
+                  [
+                      { text: "❓为什么要加入推荐计划？如何运作？", callback_data: "referralQ1_chn" },
+                  ],
+                  [
+                      { text: "❓如何获得推荐码？", callback_data: "referralQ2_chn" },
+                  ],
+                  [
+                      { text: "返回", callback_data: "general_chn" },
+                  ]
+              ]
+          }
+      }
+    goback_referral_chn:
+      {
+          reply_markup: {
+              inline_keyboard: [
+                  [
+                      { text: "返回", callback_data: "referral_chn" },
+                  ]
+              ]
+          }
+      }
+
+# customize your language
+language:
+    languageSelection: "Please choose your language!\n请选择您的语言!\n"
+
+    startCommandText: "🚀 Hi there! I am your MappedSwap Butler.  How may I be at your service?\n🚀 One click of below buttons to get help!"
+    startCommandText_chn: "🚀 您好，您的MappedSwap管家已上线。\n🚀 请点选以下按钮获得即时协助。"
+
+    faqMenuText: "Frequently Asked Questions"
+    faqMenuText_chn: "常见问题与回答"
+
+    livesupportMenuText: "Need Live Support? Just click here!"
+    livesupportMenuText_chn: "即時客服!"
+
+    GeneralCommandText: "🚀Please choose your category!"
+    GeneralCommandText_chn: "🚀请选择相关类别！"
+
+    livesupportCommandText: "❓Your live support is on!\n\n✅Please leave your messages here, and your live support will reach you shortly.\n✅Thank you!😀"
+    livesupportCommandText_chn: "❓您的即時客服已上线！\n\n✅请在此留下您的问题，客服人员会尽快与您联系。\n✅谢谢 😀😀😀"
+    livesupportOffmsg: "Hi there! We are sorry for the inconvenience caused.\nDue to it is not service hour, please leave your message here and we will contact you once the service hour is on.\n(Service hour from 10:00-19:00 on Mon. - Fri. UTC+8)\nThank you!😀"
+    livesupportOffmsg_chn: "由于现在不是服务时间，为您带来不便我们深感抱歉。请在此处留言，我们将在服务时间开始后与您联系。\n(服务时间: 周一至周五 10:00-19:00 UTC+8)\n谢谢 😀😀😀"
+
+    ChooseQuestionsText: "🚀Please choose your question below! We got your answer!                   "
+    ChooseQuestionsText_chn: "🚀请选择以下问题与回答！                "
+
+    accountQ1: "❓How to create an Eurus wallet?"
+    accountA1: "❓How to create an Eurus wallet?\n\n✅Please find more details here:\nhttps://docs.mappedswap.io/docs/CreateAccount/1ConnectYourCryptoWallet/\nIf you have more questions regarding the Eurus Wallet, please visit the FAQ page:\nhttps://www.eurus.network/support/eurus-wallet/"
+    accountQ2: "❓How to create a MetaMask wallet?"
+    accountA2: "❓How to create a MetaMask wallet?\n\n✅Please find more details here:\nhttps://docs.mappedswap.io/docs/CreateAccount/1ConnectYourCryptoWallet/\nIf you have more questions regarding the MetaMask Wallet, please visit the FAQ page:\nhttps://metamask.io/faqs.html"
+    accountQ3: "❓How to connect my wallet to MappedSwap account?"
+    accountA3: "❓How to connect my wallet to MappedSwap account?\n\n1️⃣ First, create an account of Eurus wallet or MetaMask wallet.\n2️⃣ Connect the Eurus wallet/MetaMask wallet to the MappedSwap mainnet: Visit MappedSwap and click *Connect Wallet* on the top right corner.\n3️⃣ You can start to buy/sell on MappedSwap while you see the message window showing *Login Success*. "
+
+    tradeQ0: "❓Why can't I see my Mapped Tokens in my MetaMask wallet?"
+    tradeA0: "❓Why can't I see my Mapped Tokens in my MetaMask wallet?\n\n✅Please head to our official Dapp: https://app.mappedswap.io/\n\n1. Connect to your Metamask wallet.\n2. Select “+ import tokens” on the drop-down menu. After importing, the token balance will show up in your wallet."
+    tradeQ01: "❓How can I get the EUN?"
+    tradeA01: "❓How can I get the EUN?\n\n✅EUN, the native token of Eurus blockchain and pass fees of MappedSwap.\nWe offer two options for you to get EUN:\n1. Metamask: Deposit any amount of tokens through cross-chain (Ethereum to Eurus) transfer on MappedSwap account page. \n2. Eurus Wallet: Deposit any amount of tokens on Eurus network, you will automatically receive at least 0.2 EUN in your wallet. Click here for more detail. https://www.eurus.network/eun-token/\n\n*Please note that adopting the option1 transfer will cost gas fees (ETH). "
+    tradeQ1: "❓Why can't I buy BTCM/ETHM?"
+    tradeA1: "❓Why can't I buy BTCM/ETHM?\n\n✅Please transfer USDM from your wallet (Eurus wallet/MetaMask wallet) into your MappedSwap account first, then you can proceed to trade. Please note that the transfer between MappedSwap and wallet will charge fees (EUN)."
+    tradeQ2: "❓How much amount can I borrow?"
+    tradeA2: "❓How much amount can I borrow from MappedSwap?\n\n✅MappedSwap grants users up to a 10X borrowing rate. Please check your total available funding on the upper left of the main page."
+    tradeQ3: "❓How much is the trading fee per transaction?"
+    tradeA3: "❓How much is the trading fee per transaction on MappedSwap?\n\n✅Trading fee is charged on a per swap trade basis and calculated based on 0.3% on the sold assets size.\nFor example, if a user sells 1 BTCM, 0.003 BTCM is taken from the order and the remaining 0.997 BTCM will undergo the swap trade."
+    tradeQ4: "❓Why can't I withdraw to my wallet?"
+    tradeA4: "❓Why can't I withdraw from MappedSwap account to my wallet? \n\n✅You are not able to proceed to withdraw if any of the assets in your account presents negative."
+    tradeQ5: "❓How to BUY USDM/BTCM/ETHM?"
+    tradeA5: "❓How to buy USDM/BTCM/ETHM?\n\n✅There are two ways for you to buy Mapped Tokens:\n1. Please head to account page on MappedSwap and click Deposit. Select Ethereum Network and deposit your amount (USDC/WBTC/ETH). MappedSwap will 1:1 transfer it into Mapped Tokens (USDM/BTCM/ETHM). \n*Please contact Live Support if you don't receive corresponding tokens.\n2. Please head to Uniswap and find the Mapped Tokens trading pairs.\n\nAccount Page: https://app.mappedswap.io/account\nUniswap: https://info.uniswap.org/#/pools/0x8ee3cc8e29e72e03c4ab430d7b7e08549f0c71cc"
+    tradeQ6: "❓How to SELL USDM/BTCM/ETHM?"
+    tradeA6: "❓How to sell USDM/BTCM/ETHM?\n\n✅There are two ways for you to sell Mapped Tokens:\n1. Please head to Uniswap and find the Mapped Tokens trading pairs (highly recommended); Or,\n2. Please contact your agent or representative.\n\nUniswap: https://info.uniswap.org/#/pools/0x8ee3cc8e29e72e03c4ab430d7b7e08549f0c71cc"
+
+    referralQ1: "❓How does the referral program work?"
+    referralA1: "❓How does the referral program work?\n\n✅Mappedswap’s Referral Program adopts an unlimited hierarchical model. The referrer not only earns a commission directly from referred users but also can indefinitely trace the transaction volume of indirectly referred users to boost the referrer’s rebate level and commission. As long as your rebate level is high, you can earn crypto assets without making any transaction! Invite your friends to trade now! "
+    referralQ2: "❓How can I get a referral code?"
+    referralA2: "❓How can I get a referral code?\n\n✅1. Welcome to join our April campaign! We will give away 12 MST and grant you a referral code. Click here for more detail. https://www.mappedswap.io/\n2. Please contact your representative or find a Live Support here. https://t.me/MappedSwap_Chatbot"
+
+    accountQ1_chn: "❓如何建立Eurus钱包？"
+    accountA1_chn: "❓如何建立Eurus钱包？\n\n✅您可从以下连结获得更多细节:\nhttps://docs.mappedswap.io/docs/CreateAccount/1ConnectYourCryptoWallet/\n若您对Eurus钱包有任何疑问，请参考Eurus钱包常见问题页面：https://www.eurus.network/support/eurus-wallet/"
+    accountQ2_chn: "❓如何建立MetaMask钱包？"
+    accountA2_chn: "❓如何建立MetaMask钱包？\n\n✅您可从以下连结获得更多细节：\nhttps://docs.mappedswap.io/docs/CreateAccount/1ConnectYourCryptoWallet/\n若您对MetaMask钱包有任何疑问，请参考MetaMask钱包常见问题页面：https://metamask.io/faqs.html"
+    accountQ3_chn: "❓如何连结我的钱包和ＭappedSwap账户？"
+    accountA3_chn: "❓如何连结我的钱包和ＭappedSwap账户？\n\n1️⃣ 第一步，请先建立Eurus或MetaMask的钱包账户；\n2️⃣ 接着连结Eurus钱包或MetaMask钱包到MappedSwap主网路：开启MappedSwap并点选右上角 “连接钱包”。\n3️⃣ 当出现“登入成功”的讯息后，您就可以在MappedSwap上进行交易。"
+
+    tradeQ0_chn: "❓为什麽在MetaMask钱包中，无法看见M代币资产与馀额？"
+    tradeA0_chn: "❓为什麽在MetaMask钱包中，无法看见M代币资产与馀额？\n\n✅请前往我们的官方Dapp: https://app.mappedswap.io/\n\n1. 连结您的MetaMask钱包。\n2. 在下拉式选单中选择“导入代币”，导入后您可以在钱包中查看代币馀额。"
+    tradeQ01_chn: "❓如何取得EUN?"
+    tradeA01_chn: "❓如何取得EUN?\n\n✅EUN作为Eurus的原生代币，以及在MappedSwap中各种活动的通行费。\n我们提供两种方案让您免费取得EUN:\n1. Metamask钱包: 在MappedSwap的帐户页面，透过跨链转换 (Ethereum to Eurus) 充值任何金额到平台，您将会收到0.1EUN。\n2.Eurus钱包：充值任何代币至Eurus网路，你就会收到0.2或更多的EUN。详情请点击此连结。 https://www.eurus.network/eun-token/ \n\n*请留意进行第一种的方案时，将会花费以太坊矿工费 (ETH)。"
+    tradeQ1_chn: "❓为什麽我不能买BTCM/ETHM?"
+    tradeA1_chn: "❓为什麽我不能买BTCM/ETHM?\n\n✅首先，您需要先从 Eurus/MetaMask 钱包划转USDM至您的 MappedSwap 帐户。请留意，钱包与帐户间的划转都将收取费用 (EUN)。"
+    tradeQ2_chn: "❓我可以从MappedSwap借贷多少额度？"
+    tradeA2_chn: "❓我可以从MappedSwap借贷多少额度？\n\n✅MappedSwap 允许使用者使用基于 USDM 的净资产总值的 10 倍额度，您可以在主页的左上角确认您的可用额度。"
+    tradeQ3_chn: "❓MappedSwap每笔交易收取多少交易费？"
+    tradeA3_chn: "❓MappedSwap每笔交易收取多少交易费？\n\n✅交易手续费按出售资产规模的0.3%计算，直接从交易中扣除。\n例如，如果用户卖出 1 BTCM，则从订单中取出 0.003 BTCM，剩余的 0.997 BTCM 将进行交易。"
+    tradeQ4_chn: "❓为什么我的资产无法从MappedSwap帐户划转至我的钱包？"
+    tradeA4_chn: "❓为什么我的资产无法从MappedSwap帐户划转至我的钱包？ \n\n✅如果您账户中的任何资产呈现负数，您将无法继续提款。"
+    tradeQ5_chn: "❓如何买入USDM/BTCM/ETHM?"
+    tradeA5_chn: "❓如何买入USDM/BTCM/ETHM? \n\n✅我们提供两种方式供您買進M代币:\n1. 请至MappedSwap帐户页面，选择充值资产，并选择Ethereum网络，充值您所需要的数量 (USDC/WBTC/ETHM)。MappedSwap会立即将相对应的M代币 (USDM/BTCM/ETHM)，1:1充值至您的帐户。\n* 若您未收到对应的代币数量，请您立即联繫即时客服。\n2. 请前往Uniswap并找到M代币交易对进行兑换。\n帐户页面: https://app.mappedswap.io/account\nUniswap: https://info.uniswap.org/#/pools/0x8ee3cc8e29e72e03c4ab430d7b7e08549f0c71cc"
+    tradeQ6_chn: "❓如何卖出 USDM/BTCM/ETHM?"
+    tradeA6_chn: "❓如何卖出 USDM/BTCM/ETHM? \n\n✅我们提供两种方式供您卖出M代币:\n1. 请前往Uniswap并找到M代币交易对进行兑换 (诚挚建议)。\nhttps://info.uniswap.org/#/pools/0x8ee3cc8e29e72e03c4ab430d7b7e08549f0c71cc\n\n2. 联繫您的代理或是代表人。"
+
+    referralQ1_chn: "❓为什么要加入推荐计划？如何运作？"
+    referralA1_chn: "❓为什么要加入推荐计划？如何运作？\n\n✅Mappedswap的推荐计划采用无限层级模式，推荐人不仅可以享受直接推荐用户的佣金，还可以无限往下追溯间接推荐的用户的交易量，用以提升自己的返佣比例及佣金。只要您的返佣比例高，就可以体验无需交易即可赚取加密货币！邀请朋友一起来吧! "
+    referralQ2_chn: "❓如何获得推荐码？"
+    referralA2_chn: "❓如何获得推荐码？\n\n✅1.欢迎加入MappedSwap四月的活动！我们将送您12 MST以及个人专属推荐码。详情请点击此连结。 https://www.mappedswap.io/ \n2.请联系您的代理或是联系我们取得支援。 https://t.me/MappedSwap_Chatbot "
+
+    faqCommandText: "Get this bot at: <a href='https://github.com/bostrot/telegram-support-bot'>github.com</a>"
+    helpCommandText: "<b>Available commands:</b>\n/help\n/faq\n/id"
+    contactMessage: " "
+    blockedSpam: "You sent quite a number of questions in the last while. Please calm down and wait until staff reviews them."
+    ticket: "Ticket"
+    closed: "closed"
+    acceptedBy: "was accepted by"
+    dear: "Dear"
+    regards: "Best regards,"
+    from: "from"
+    language: " "
+    msg_sent: "Message sent to user"
+    file_sent: "File sent to user"
+    usr_with_ticket: "User with ticket"
+    banned: "banned"
+    replyPrivate: "Reply in private"
+    services: "Select a service from the list below"
+    customer: "customer"
+    msgForwarding: "You messages will now be forwarded to vendors of the group: "
+    back: "Go back"
+    whatSubCategory: "Which subcategory describes your needs the best? "
+    prvChatEnded: "Private chat ended."
+    prvChatOpened: "Private Chat opened with customer."
+    prvChatEnd: "End Private chat"
+    prvChatOpenedCustomer: "Opened private chat"
+    instructionsSent: "Instructions were sent to you in private chat."
+    openTickets: "Open Tickets"
+    support: "Support"
+    prvChatOnly: "This command can be used in private chat only."
+    ticketClosed: "Your ticket is closed. Should you need any further assistance, please feel free to contact us anytime! Have a nice day 😀😀😀\n此对话已关闭。如您尚有其他需要协助之处，请不吝随时与我们联系。祝您有美好的一天 😀😀😀"
+    links: "Direct support links"
+    textFirst: "Please send us a message before sending an image so that we can help you better."
+    ticketClosedError: "You cannot reply to a closed ticket."
+    automatedReply: "This is an automated reply."
+    automatedReplyAuthor: "BottyBot."
+    doesntHelp: "This does not help."
+    automatedReplySent: "Automated reply was send to the user."
+    ticketReopened: "Ticket reopened."
+
+#categories:
+#    - name: "Category1"
+#      subgroups:
+#          - name: "testing category"
+#            group_id: "-666710999"
+#          - name: "bot testing"
+#            group_id: "-647953403"
+#          - name: "bot testing 123123123123"
+#            group_id: "-638835160"

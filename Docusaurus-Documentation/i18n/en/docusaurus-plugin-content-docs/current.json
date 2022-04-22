@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Protocol Explainer": {
+    "message": "Protocol Explainer",
+    "description": "The label for category Protocol Explainer in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Cross-Margin Swap Trading": {
+    "message": "Cross-Margin Swap Trading",
+    "description": "The label for category Cross-Margin Swap Trading in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Referral Program": {
+    "message": "Referral Program",
+    "description": "The label for category Referral Program in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.How to Create an Account?": {
+    "message": "How to Create an Account?",
+    "description": "The label for category How to Create an Account? in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.中文版文档": {
+    "message": "中文版文档",
+    "description": "The label for category 中文版文档 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.协议诠释": {
+    "message": "协议诠释",
+    "description": "The label for category 协议诠释 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.全仓保证金交易": {
+    "message": "全仓保证金交易",
+    "description": "The label for category 全仓保证金交易 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.推荐计划": {
+    "message": "推荐计划",
+    "description": "The label for category 推荐计划 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.如何创建帐户？": {
+    "message": "如何创建帐户？",
+    "description": "The label for category 如何创建帐户？ in sidebar tutorialSidebar"
+  }
+}

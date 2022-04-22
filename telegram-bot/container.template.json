@@ -1,0 +1,11 @@
+{
+    "containers": {
+      "app": {
+        "image": "",
+        "environment": {
+          "APP_ENV": "release",
+          "NODE_ENV": "production"
+        }
+        }
+      }
+  }

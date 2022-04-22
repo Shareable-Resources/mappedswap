@@ -1,0 +1,21 @@
+html {
+  /* border: 2px green solid; */
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: Inter;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+#root {
+  /* border: 1px red solid; */
+  height: 100%;
+}

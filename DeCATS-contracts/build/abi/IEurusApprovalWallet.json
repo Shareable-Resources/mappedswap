@@ -1,0 +1,53 @@
+[
+  {
+    "inputs": [
+      { "internalType": "address", "name": "internalSCConfig", "type": "address" },
+      { "internalType": "uint8", "name": "queryPendingListLimit", "type": "uint8" }
+    ],
+    "name": "init",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "addr", "type": "address" }],
+    "name": "setInternalSmartContractConfig",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "uint8", "name": "limitCount", "type": "uint8" }],
+    "name": "setQueryPendingListCount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "addr", "type": "address" }],
+    "name": "setFallbackAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getInternalSmartContractConfig",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "srcWallet", "type": "address" },
+      { "internalType": "address", "name": "destWallet", "type": "address" },
+      { "internalType": "uint256", "name": "amount", "type": "uint256" },
+      { "internalType": "string", "name": "assetName", "type": "string" },
+      { "internalType": "uint256", "name": "feeAmount", "type": "uint256" }
+    ],
+    "name": "submitWithdrawRequest",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

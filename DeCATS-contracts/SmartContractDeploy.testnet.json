@@ -1,0 +1,135 @@
+{
+    "1984": {
+        "smartContract": {
+            "Multicall": {
+                "address": "0xF5C1269e697527a2b803d52c066D0D8D3B8030Ba"
+            },
+            "WrappedEUN": {
+                "address": "0xf4632691f8b277C54130E00ad4661fDec1660191"
+            },
+            "OwnedUpgradeableProxy<WEUN>": {
+                "address": "0xa94EB85a8e1554a5390143d21E6F359b30336526"
+            },
+            "MappedSwapToken": {
+                "address": "0x04635EAD620dE21E28E16EAE8d9D04822C1bF93a"
+            },
+            "UpgradeableBeacon<MappedSwapToken>": {
+                "address": "0xACb4be84289fb0248dE3f8E4D20B3205bC33a973"
+            },
+            "OwnedBeaconProxy<USDM>": {
+                "address": "0x0cdfb6289e47E834b98f62A6275672f5De4Ac283"
+            },
+            "OwnedBeaconProxy<BTCM>": {
+                "address": "0xbA925BF962b68B6ff3b62377De03E20B95F182aa"
+            },
+            "OwnedBeaconProxy<ETHM>": {
+                "address": "0x93e981C73368Fb723E0ef742B89C38C866dDAd8f"
+            },
+            "RaijinSwapFactory": {
+                "address": "0xF289A1fedD1ba67ED15a321EdE8f9cEc94b638A7"
+            },
+            "OwnedUpgradeableProxy<RaijinSwapFactory>": {
+                "address": "0x83c314fe236113E31F9c893211DA1633DbD8a7d4"
+            },
+            "RaijinSwapRouter": {
+                "address": "0x504BF9a8f64E62aC437381Ed9373B5c6E761BF56"
+            },
+            "OwnedUpgradeableProxy<RaijinSwapRouter>": {
+                "address": "0x649573a0C27089cF39e919122703353066354669"
+            },
+            "PoolCore": {
+                "address": "0x928c0d3B00CA6e16D6ED2dCEb0C77dcb74d62063"
+            },
+            "OwnedUpgradeableProxy<Pool>": {
+                "address": "0x41F8A070381A961bD62F6f12141639B5337972FD"
+            },
+            "PoolManagement": {
+                "address": "0xF11E15eAe3cc4c24e83351911a7D3874a14F3f8C"
+            },
+            "PriceAdjust": {
+                "address": "0x4cc6dbAADFb290742b4Fd2D37bb5F39Da5A3c56f"
+            },
+            "OwnedUpgradeableProxy<PriceAdjust>": {
+                "address": "0x6745A3c1Af3e0399531c98a56eE2c51968fc1A3D"
+            },
+            "Payout": {
+                "address": "0x1da49219368D432a952BcBdED2490B70dECC4267"
+            },
+            "OwnedUpgradeableProxy<Payout>": {
+                "address": "0x60D142a61BfC3c63858D2A65e4581d8f6ab3aD9A"
+            },
+            "AgentData": {
+                "address": "0x3c29884eE4F7082095e5C802671Da7f57deba0AD"
+            },
+            "OwnedUpgradeableProxy<AgentData>": {
+                "address": "0xaD09f4e932bdF38A2F8b926acD45fFFc7d72Ff10"
+            },
+            "OwnedBeaconProxy<MST>": {
+                "address": "0x64dd1F06752dF78836e7dAE6d08c49d8fbE2A1F0"
+            },
+            "Staking": {
+                "address": "0x2765Fcc27754148aeA420FeFc879265e278b536f"
+            },
+            "OwnedUpgradeableProxy<Staking>": {
+                "address": "0x15fD75F1224EC6c022e2db4304e248dfeF8017a3"
+            },
+            "MST": {
+                "address": "0x64dd1F06752dF78836e7dAE6d08c49d8fbE2A1F0"
+            },
+            "USDC": {
+                "address": "0xF2f58Cda7d6f0841224A85f62546bbE9478b4FdC"
+            },
+            "WBTC": {
+                "address": "0xC3463139054e570Cc8A1b8C99f9ECd4d9D33DE80"
+            },
+            "WETH": {
+                "address": "0xa94EB85a8e1554a5390143d21E6F359b30336526"
+            },
+            "UniswapV3_WBTC_USDC_Pool": {
+                "address": "0x8707827af73C9906a114A1c6d252C24e1D2cDB6C"
+            },
+            "UniswapV3_USDC_WETH_Pool": {
+                "address": "0xFDf4b843AD15AFa2AeaCA823E8A175acED890Dd0"
+            },
+            "MiningPool": {
+                "address": "0xAAfb55Fef111B9fA22b52cABaC5e69A27b4bB08d"
+            },
+            "UpgradeableBeacon<MiningPool>": {
+                "address": "0x9f5B9721536DDaCc796A8333719d8aD65cD0fD66"
+            },
+            "OwnedBeaconProxy<USDMiningPool>": {
+                "address": "0xcFD7249BFFb2b4ba35BD6f7537d916348F15e6B2"
+            },
+            "OwnedBeaconProxy<BTCMiningPool>": {
+                "address": "0x2e31D6B81911Ae58eaE20f10f10D4E5b41D9129F"
+            },
+            "OwnedBeaconProxy<ETHMiningPool>": {
+                "address": "0x0C2Dadb6A6fc57873a1f2F7B886bc42538f8f586"
+            },
+            "MappedSwapOwner": {
+                "address": "0x1625588F97EFcb38e32081f410C353992ecd9107"
+            },
+            "RaijinSwapOwner": {
+                "address": "0x14c2b7216859338e4E29FD36E342196ec5172f87"
+            },
+            "PaymentProxy": {
+                "address": "0x2Efa2Baa9A9273bf120814ED05a5d5C3b9DeE91C"
+            },
+            "HashedKeyStorage": {
+                "address": "0x3B671735Caa0f156b22693e4c587FdD914b2b412"
+            },
+            "UpgradeableBeacon<HashedKeyStorage>": {
+                "address": "0x14e5A9b1A5e0547e38F0197338f6873068652893"
+            },
+            "OwnedBeaconProxy<AgentStorage>": {
+                "address": "0x0C69e3911f0EC6aFD54487426aaC07710771b9E7"
+            },
+            "OwnedBeaconProxy<TradeStorage>": {
+                "address": "0x4308d0c7ed319624CB3DeD9F25f53E338DCf6edd"
+            },
+            "OwnedBeaconProxy<RelationStorage>": {
+                "address": "0x33baCc8A1905aEd4952117e378ACd0a87286e5b5"
+            }
+        }
+    }
+}

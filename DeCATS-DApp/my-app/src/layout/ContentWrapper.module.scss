@@ -1,0 +1,8 @@
+#content-wrap {
+  padding: 60px 100px 0 100px;
+
+  @media only screen and (max-width: 960px) {
+    padding: 60px 10px 100px 10px;
+    // padding-bottom: 20px;
+  }
+}

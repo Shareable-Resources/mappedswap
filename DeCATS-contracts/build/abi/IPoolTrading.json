@@ -1,0 +1,119 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "string", "name": "pairName", "type": "string" },
+      { "indexed": false, "internalType": "string", "name": "tokenNameBuy", "type": "string" },
+      { "indexed": false, "internalType": "uint256", "name": "amountBuy", "type": "uint256" },
+      { "indexed": false, "internalType": "int256", "name": "newBalanceBuy", "type": "int256" },
+      { "indexed": false, "internalType": "uint256", "name": "amountSell", "type": "uint256" },
+      { "indexed": false, "internalType": "int256", "name": "newBalanceSell", "type": "int256" },
+      { "indexed": false, "internalType": "bool", "name": "isStopout", "type": "bool" }
+    ],
+    "name": "Buy",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "string", "name": "tokenName", "type": "string" },
+      { "indexed": false, "internalType": "uint256", "name": "amount", "type": "uint256" },
+      { "indexed": false, "internalType": "int256", "name": "newBalance", "type": "int256" }
+    ],
+    "name": "IncreaseBalance",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "uint256", "name": "beginTime", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "endTime", "type": "uint256" },
+      { "indexed": false, "internalType": "string[]", "name": "tokenNames", "type": "string[]" },
+      { "indexed": false, "internalType": "int256[]", "name": "realizedBalances", "type": "int256[]" },
+      { "indexed": false, "internalType": "uint256[]", "name": "interests", "type": "uint256[]" }
+    ],
+    "name": "Interest",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "string", "name": "pairName", "type": "string" },
+      { "indexed": false, "internalType": "string", "name": "tokenNameSell", "type": "string" },
+      { "indexed": false, "internalType": "uint256", "name": "amountSell", "type": "uint256" },
+      { "indexed": false, "internalType": "int256", "name": "newBalanceSell", "type": "int256" },
+      { "indexed": false, "internalType": "uint256", "name": "amountBuy", "type": "uint256" },
+      { "indexed": false, "internalType": "int256", "name": "newBalanceBuy", "type": "int256" },
+      { "indexed": false, "internalType": "bool", "name": "isStopout", "type": "bool" }
+    ],
+    "name": "Sell",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "string", "name": "tokenName", "type": "string" },
+      { "indexed": false, "internalType": "uint256", "name": "amount", "type": "uint256" },
+      { "indexed": false, "internalType": "int256", "name": "newBalance", "type": "int256" }
+    ],
+    "name": "Withdraw",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "tokenName", "type": "string" },
+      { "internalType": "uint256", "name": "amount", "type": "uint256" }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "tokenName", "type": "string" },
+      { "internalType": "uint256", "name": "amount", "type": "uint256" },
+      { "internalType": "contract IFixedRateExchange", "name": "exchange", "type": "address" },
+      { "internalType": "address", "name": "provider", "type": "address" },
+      { "internalType": "contract IERC20", "name": "toToken", "type": "address" },
+      { "internalType": "uint256", "name": "amountOutMin", "type": "uint256" }
+    ],
+    "name": "withdrawAndExchange",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "customer", "type": "address" },
+      { "internalType": "string", "name": "pairName", "type": "string" },
+      { "internalType": "string", "name": "tokenNameBuy", "type": "string" },
+      { "internalType": "uint256", "name": "amountBuy", "type": "uint256" },
+      { "internalType": "uint256", "name": "amountSellMax", "type": "uint256" },
+      { "internalType": "uint256", "name": "deadline", "type": "uint256" }
+    ],
+    "name": "buy",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "customer", "type": "address" },
+      { "internalType": "string", "name": "pairName", "type": "string" },
+      { "internalType": "string", "name": "tokenNameSell", "type": "string" },
+      { "internalType": "uint256", "name": "amountSell", "type": "uint256" },
+      { "internalType": "uint256", "name": "amountBuyMin", "type": "uint256" },
+      { "internalType": "uint256", "name": "deadline", "type": "uint256" }
+    ],
+    "name": "sell",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "inputs": [
+      { "internalType": "string", "name": "tokenName", "type": "string" },
+      { "internalType": "uint256", "name": "amount", "type": "uint256" }
+    ],
+    "name": "addPoolFunding",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "uint256", "name": "amount", "type": "uint256" }],
+    "name": "addPoolCompensation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getCumulativeLoss",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getCumulativeCompensation",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

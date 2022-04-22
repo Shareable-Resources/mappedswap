@@ -1,0 +1,41 @@
+{
+  "name": "DApp-local",
+  "sequelize": {
+    "comment": "Specifying sequlize config",
+    "database": "postgres",
+    "username": "postgres",
+    "password": "d18d4ccf53cfd37773655cad4914077c030827344a6364e31e6bee11d97c7ad187781f2a093bf4ea07bf333065bdd60ddf32d4708813d4d7ae63ec9b9d8c0726eea2ee709b1bdca01cb4939e611008de520a66fac16bad9736afcb6b29a3407f88",
+    "host": "127.0.0.1",
+    "type": "postgres",
+    "port": 5432,
+    "schema": "public",
+    "logging": false
+  },
+  "express": {
+    "comment": "Specifying express config",
+    "port": 8095,
+    "name": "dApp"
+  },
+  "winston": {
+    "comment": "Specifying winston config, when set console : true, logger will log in console in addition to standard log file",
+    "console": true
+  },
+  "priceLoader": {
+    "interval": 1000
+  },
+  "FixedAgentLevel": {
+    "interestLevel": {
+      "level1": "80",
+      "level2": "70",
+      "level3": "55",
+      "level4": "35"
+    },
+    "feeLevel": {
+      "level1": "80",
+      "level2": "70",
+      "level3": "55",
+      "level4": "35"
+    },
+    "memberOnEachLevel": 5
+  }
+}

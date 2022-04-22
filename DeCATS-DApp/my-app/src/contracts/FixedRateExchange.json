@@ -1,0 +1,277 @@
+{
+  "contractName": "FixedRateExchange",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": true, "internalType": "address", "name": "from", "type": "address" },
+        { "indexed": true, "internalType": "address", "name": "provider", "type": "address" },
+        { "indexed": true, "internalType": "address", "name": "recipient", "type": "address" },
+        { "indexed": false, "internalType": "address", "name": "tokenIn", "type": "address" },
+        { "indexed": false, "internalType": "address", "name": "tokenOut", "type": "address" },
+        { "indexed": false, "internalType": "uint256", "name": "amountIn", "type": "uint256" },
+        { "indexed": false, "internalType": "uint256", "name": "amountOut", "type": "uint256" }
+      ],
+      "name": "Exchange",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": true, "internalType": "address", "name": "provider", "type": "address" },
+        { "indexed": true, "internalType": "address", "name": "tokenIn", "type": "address" },
+        { "indexed": true, "internalType": "address", "name": "tokenOut", "type": "address" },
+        { "indexed": false, "internalType": "uint256", "name": "numerator", "type": "uint256" },
+        { "indexed": false, "internalType": "uint256", "name": "denominator", "type": "uint256" },
+        { "indexed": false, "internalType": "uint256", "name": "fixedFee", "type": "uint256" }
+      ],
+      "name": "ExchangeRate",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "WEUN",
+      "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenOut", "type": "address" },
+        { "internalType": "uint256", "name": "amountOut", "type": "uint256" },
+        { "internalType": "uint256", "name": "amountInMax", "type": "uint256" },
+        { "internalType": "address", "name": "recipient", "type": "address" }
+      ],
+      "name": "exchangeEUNToExactAmount",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenOut", "type": "address" },
+        { "internalType": "uint256", "name": "amountOut", "type": "uint256" },
+        { "internalType": "uint256", "name": "amountInMax", "type": "uint256" }
+      ],
+      "name": "exchangeEUNToExactAmount",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenIn", "type": "address" },
+        { "internalType": "uint256", "name": "amountIn", "type": "uint256" },
+        { "internalType": "uint256", "name": "amountOutMin", "type": "uint256" }
+      ],
+      "name": "exchangeExactAmountToEUN",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenIn", "type": "address" },
+        { "internalType": "uint256", "name": "amountIn", "type": "uint256" },
+        { "internalType": "uint256", "name": "amountOutMin", "type": "uint256" },
+        { "internalType": "address", "name": "recipient", "type": "address" }
+      ],
+      "name": "exchangeExactAmountToEUN",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenIn", "type": "address" },
+        { "internalType": "address", "name": "tokenOut", "type": "address" },
+        { "internalType": "uint256", "name": "amountIn", "type": "uint256" },
+        { "internalType": "uint256", "name": "amountOutMin", "type": "uint256" }
+      ],
+      "name": "exchangeFromExactAmount",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenIn", "type": "address" },
+        { "internalType": "address", "name": "tokenOut", "type": "address" },
+        { "internalType": "uint256", "name": "amountIn", "type": "uint256" },
+        { "internalType": "uint256", "name": "amountOutMin", "type": "uint256" },
+        { "internalType": "address", "name": "recipient", "type": "address" }
+      ],
+      "name": "exchangeFromExactAmount",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenOut", "type": "address" },
+        { "internalType": "uint256", "name": "amountOutMin", "type": "uint256" },
+        { "internalType": "address", "name": "recipient", "type": "address" }
+      ],
+      "name": "exchangeFromExactEUN",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenOut", "type": "address" },
+        { "internalType": "uint256", "name": "amountOutMin", "type": "uint256" }
+      ],
+      "name": "exchangeFromExactEUN",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenIn", "type": "address" },
+        { "internalType": "address", "name": "tokenOut", "type": "address" },
+        { "internalType": "uint256", "name": "amountOut", "type": "uint256" },
+        { "internalType": "uint256", "name": "amountInMax", "type": "uint256" }
+      ],
+      "name": "exchangeToExactAmount",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenIn", "type": "address" },
+        { "internalType": "address", "name": "tokenOut", "type": "address" },
+        { "internalType": "uint256", "name": "amountOut", "type": "uint256" },
+        { "internalType": "uint256", "name": "amountInMax", "type": "uint256" },
+        { "internalType": "address", "name": "recipient", "type": "address" }
+      ],
+      "name": "exchangeToExactAmount",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenIn", "type": "address" },
+        { "internalType": "uint256", "name": "amountOut", "type": "uint256" },
+        { "internalType": "uint256", "name": "amountInMax", "type": "uint256" },
+        { "internalType": "address", "name": "recipient", "type": "address" }
+      ],
+      "name": "exchangeToExactEUN",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenIn", "type": "address" },
+        { "internalType": "uint256", "name": "amountOut", "type": "uint256" },
+        { "internalType": "uint256", "name": "amountInMax", "type": "uint256" }
+      ],
+      "name": "exchangeToExactEUN",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenIn", "type": "address" },
+        { "internalType": "address", "name": "tokenOut", "type": "address" },
+        { "internalType": "uint256", "name": "amountOut", "type": "uint256" }
+      ],
+      "name": "getAmountIn",
+      "outputs": [{ "internalType": "uint256", "name": "amountIn", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenIn", "type": "address" },
+        { "internalType": "address", "name": "tokenOut", "type": "address" },
+        { "internalType": "uint256", "name": "amountIn", "type": "uint256" }
+      ],
+      "name": "getAmountOut",
+      "outputs": [{ "internalType": "uint256", "name": "amountOut", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenIn", "type": "address" },
+        { "internalType": "address", "name": "tokenOut", "type": "address" }
+      ],
+      "name": "getRate",
+      "outputs": [
+        {
+          "components": [
+            { "internalType": "uint256", "name": "numerator", "type": "uint256" },
+            { "internalType": "uint256", "name": "denominator", "type": "uint256" },
+            { "internalType": "uint256", "name": "fixedFee", "type": "uint256" }
+          ],
+          "internalType": "struct IFixedRateExchange.Rate",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "provider", "type": "address" },
+        { "internalType": "address", "name": "tokenOut", "type": "address" }
+      ],
+      "name": "getReserve",
+      "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "tokenIn", "type": "address" },
+        { "internalType": "address", "name": "tokenOut", "type": "address" },
+        { "internalType": "uint256", "name": "equivalentIn", "type": "uint256" },
+        { "internalType": "uint256", "name": "equivalentOut", "type": "uint256" },
+        { "internalType": "uint256", "name": "fixedFee", "type": "uint256" }
+      ],
+      "name": "setRate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "uint256", "name": "amount", "type": "uint256" },
+        { "internalType": "address", "name": "recipient", "type": "address" }
+      ],
+      "name": "unwrapWEUN",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "address", "name": "recipient", "type": "address" }],
+      "name": "wrapEUN",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ]
+}

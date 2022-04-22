@@ -1,0 +1,37 @@
+.main {
+  height: 132px;
+  color: #585858;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-bottom: 1px solid #878787;
+
+  div {
+    font-size: 14px;
+  }
+
+  .user_created {
+    display: flex;
+  }
+
+  .bold {
+    white-space: nowrap;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+
+  .title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.05px;
+    padding-top: 35.5px;
+    padding-bottom: 15.5px;
+  }
+
+  .section {
+    display: flex;
+    padding-right: 40px;
+  }
+  .detail {
+    white-space: nowrap;
+  }
+}

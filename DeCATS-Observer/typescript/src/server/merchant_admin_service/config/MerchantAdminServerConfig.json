@@ -1,0 +1,16 @@
+{
+  "sequelize": {
+    "logging": false,
+    "username": "postgres",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "password": "123456",
+    "database": "123456",
+    "schema": "merchant_demo",
+    "timezone": "+08:00"
+  },
+  "express": {
+    "port": 8091,
+    "name": "merchant-demo"
+  }
+}

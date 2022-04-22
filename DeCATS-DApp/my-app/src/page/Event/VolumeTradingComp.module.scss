@@ -1,0 +1,153 @@
+$bgPath: "../../asset";
+
+.campaign-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: url(#{$bgPath}/img_VolumeTradingCompetitionBackground.png);
+
+
+    .sub-container {
+        margin-top: 100px;
+        width: 90%;
+        padding: 30px;
+    }
+
+    .task-container {
+        width: 90%;
+        background-color: rgb(18, 22, 34);
+        padding: 30px;
+        margin-top: 200px;
+        border: 1px;
+        border-color: rgb(57, 63, 79);
+        border-style: solid;
+    }
+
+    .task-content {
+        align-items: center;
+        justify-content: center;
+
+        span {
+            color: rgb(243, 191, 3);
+        }
+    }
+
+    
+    .table {
+        display: flex;
+        justify-content: center;
+
+        table {
+            width: 90%;
+            
+        }
+    
+        table,
+        th,
+        td {
+            border: 1px solid;
+            border-color: gray;
+            border-collapse: collapse;
+        }
+    
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+            color: white;
+    
+            @media only screen and (max-width: 700px) {
+                font-size: .866rem;
+                padding: 10px;
+            }
+
+            @media only screen and (max-width: 543px) {
+                font-size: .625rem;
+                padding: 5px;
+            }
+        }
+    }
+
+    .table-container {
+        width: 100%;
+    }
+
+    .blue-font {
+        font-family: Arial;
+        font-size: 3rem;
+        font-weight: bold;
+        color: rgb(51, 191, 250);
+
+        @media only screen and (max-width: 960px) {
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: 400px) {
+            font-size: 2.25rem;
+        }
+    }
+
+    .white-font {
+        font-family: Arial;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        margin: 20px;
+    }
+
+    .font-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .small-white-font {
+        font-family: Arial;
+        font-size: 0.875rem;
+        color: white;
+        margin: 20px;
+        width: 60%;
+
+        @media only screen and (max-width: 960px) {
+            width: 100%;
+        }
+    }
+
+    .terms-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .bullet-points {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        font-family: Arial;
+        font-size: 0.625rem;
+        color: white;
+        text-align: left;
+
+        span {
+            color: rgb(243, 191, 3);
+        }
+    }
+
+    button {
+        background-color: rgb(51, 191, 250);
+        border-radius: 10px;
+        border: none;
+        font-family: Arial;
+        color: white;
+        height: 40px;
+        width: 225px;
+
+        @media only screen and (max-width: 400px) {
+            font-weight: bold;
+            width: 70%;
+
+        }
+    }
+}

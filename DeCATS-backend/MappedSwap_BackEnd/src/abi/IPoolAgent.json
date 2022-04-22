@@ -1,0 +1,132 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "uint256", "name": "oldFunding", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "newFunding", "type": "uint256" }
+    ],
+    "name": "UpdateFunding",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "uint256", "name": "oldLeverage", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "newLeverage", "type": "uint256" }
+    ],
+    "name": "UpdateLeverage",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "int256", "name": "oldMode", "type": "int256" },
+      { "indexed": false, "internalType": "int256", "name": "newMode", "type": "int256" }
+    ],
+    "name": "UpdateMode",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "int256", "name": "oldRiskLevel", "type": "int256" },
+      { "indexed": false, "internalType": "int256", "name": "newRiskLevel", "type": "int256" }
+    ],
+    "name": "UpdateRiskLevel",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "customer", "type": "address" },
+      { "indexed": false, "internalType": "int256", "name": "oldStatus", "type": "int256" },
+      { "indexed": false, "internalType": "int256", "name": "newStatus", "type": "int256" }
+    ],
+    "name": "UpdateStatus",
+    "type": "event"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "customer", "type": "address" }],
+    "name": "getCustomerInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              { "internalType": "string", "name": "tokenName", "type": "string" },
+              { "internalType": "int256", "name": "realizedBalance", "type": "int256" },
+              {
+                "components": [
+                  { "internalType": "uint256", "name": "value", "type": "uint256" },
+                  { "internalType": "uint256", "name": "effectiveTime", "type": "uint256" }
+                ],
+                "internalType": "struct PoolStruct.InterestRate[]",
+                "name": "interestRates",
+                "type": "tuple[]"
+              },
+              { "internalType": "uint256", "name": "interest", "type": "uint256" },
+              { "internalType": "int256", "name": "usdmEquivalent", "type": "int256" }
+            ],
+            "internalType": "struct PoolStruct.CustomerTokenInfo[]",
+            "name": "tokens",
+            "type": "tuple[]"
+          },
+          { "internalType": "int256", "name": "equity", "type": "int256" },
+          { "internalType": "int256", "name": "mode", "type": "int256" },
+          { "internalType": "uint256", "name": "leverage", "type": "uint256" },
+          { "internalType": "uint256", "name": "maxFunding", "type": "uint256" },
+          { "internalType": "uint256", "name": "usedFunding", "type": "uint256" },
+          { "internalType": "int256", "name": "stopoutRiskLevel", "type": "int256" },
+          { "internalType": "int256", "name": "currentRiskLevel", "type": "int256" },
+          { "internalType": "uint256", "name": "lastInterestCalcTime", "type": "uint256" },
+          { "internalType": "uint256", "name": "interestCalcCutoffTime", "type": "uint256" },
+          { "internalType": "int256", "name": "status", "type": "int256" }
+        ],
+        "internalType": "struct PoolStruct.CustomerInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getOwner",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getReferenceToken",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRouter",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "customer", "type": "address" },
+      { "internalType": "int256", "name": "newMode", "type": "int256" },
+      { "internalType": "uint256", "name": "newLeverage", "type": "uint256" },
+      { "internalType": "uint256", "name": "newFunding", "type": "uint256" },
+      { "internalType": "int256", "name": "newRiskLevel", "type": "int256" },
+      { "internalType": "int256", "name": "newStatus", "type": "int256" }
+    ],
+    "name": "updateCustomerDetails",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

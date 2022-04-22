@@ -1,0 +1,37 @@
+{
+  "name": "MiningRewards-dev",
+  "sequelize": {
+    "comment": "Specifying sequlize config",
+    "database": "postgres",
+    "username": "christopher",
+    "password": "f1cc3a90e769166c296af94972dbf31502744f42d5e9316e8d1f15768ff3ec46108f37f4aaa35897440430ac8178e2d5ca96c9322e61277845e810f633702ccee81ed51681e736c7bc772f4893ba359a6d7a4dd4604827183152e0651a466210394440bbd04685487d2f7823336a81f8d8",
+    "host": "54.151.148.23",
+    "type": "postgres",
+    "port": 5432,
+    "schema": "public",
+    "logging": false
+  },
+  "express": {
+    "comment": "Specifying express config",
+    "port": 8097
+  },
+  "winston": {
+    "comment": "Specifying winston config, when set console : true, logger will log in console in addition to standard log file",
+    "console": true
+  },
+  "rewardsJob": {
+    "miningRewards": "*/50 */3 * * * *",
+    "comment": "60 * 3",
+    "fromTime": "180",
+    "minusMinteus": "180",
+    "minusMinteusComment": "60 * 3"
+  },
+  "rewardsObserver": {
+    "rewardsObserver": "*/1 * * * *"
+  },
+  "stakeReward": {
+    "unlockInterval": "180",
+    "division": 50,
+    "minMstTransferValue": 0.01
+  }
+}

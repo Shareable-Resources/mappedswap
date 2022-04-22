@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="921" height="212" viewBox="0 0 921 212">
+  <g id="Group_11730" data-name="Group 11730" transform="translate(19461 -6065)">
+    <g id="Path_9985" data-name="Path 9985" transform="translate(-19461 6065)" fill="#252b36">
+      <path d="M 197.5 211.5 L 0.5 211.5 L 0.5 0.5 L 99.16665649414062 0.5 L 197.5 0.5 L 197.5 211.5 Z" stroke="none"/>
+      <path d="M 1 1 L 1 211 L 197 211 L 197 1 L 1 1 M 0 0 L 198 0 L 198 212 L 0 212 L 0 0 Z" stroke="none" fill="#3a3f4e"/>
+    </g>
+    <g id="Rectangle_458" data-name="Rectangle 458" transform="translate(-19126 6065)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+      <rect width="244" height="101" stroke="none"/>
+      <rect x="0.5" y="0.5" width="243" height="100" fill="none"/>
+    </g>
+    <g id="Rectangle_459" data-name="Rectangle 459" transform="translate(-19126 6177)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+      <rect width="244" height="100" stroke="none"/>
+      <rect x="0.5" y="0.5" width="243" height="99" fill="none"/>
+    </g>
+    <g id="Rectangle_460" data-name="Rectangle 460" transform="translate(-18770 6065)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+      <rect width="230" height="101" stroke="none"/>
+      <rect x="0.5" y="0.5" width="229" height="100" fill="none"/>
+    </g>
+    <text id="User_A_with_0_transaction_volume" data-name="User A
+with $0 transaction volume" transform="translate(-19362 6164)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="-21.01" y="0">User A</tspan><tspan x="-82.875" y="17">with $0 transaction volume</tspan></text>
+    <text id="User_B_with_150K_transaction_volume_transaction_fee_450_interest_50" data-name="User B
+with $150K transaction volume/
+transaction fee $450＋interest $50" transform="translate(-19004 6102)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="-21.393" y="0">User B</tspan><tspan x="-97.275" y="17">with $150K transaction volume/</tspan><tspan x="-107.013" y="38">transaction fee $450</tspan><tspan y="38" font-family="PingFangSC-Regular, PingFang SC">＋</tspan><tspan y="38">interest $50</tspan></text>
+    <text id="User_C_with_400K_transaction_volume_transaction_fee_1200_interest_100" data-name="User C
+with $400K transaction volume/
+transaction fee $1200＋interest $100" transform="translate(-19004 6212)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="-21.779" y="0">User C</tspan><tspan x="-97.275" y="17">with $400K transaction volume/</tspan><tspan x="-114.799" y="38">transaction fee $1200</tspan><tspan y="38" font-family="PingFangSC-Regular, PingFang SC">＋</tspan><tspan y="38">interest $100</tspan></text>
+    <text id="User_D_with_1K_transaction_volume_transaction_fee_30_interest_50" data-name="User D
+with $1K transaction volume/
+transaction fee $30＋interest $50" transform="translate(-18655 6102)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="-21.779" y="0">User D</tspan><tspan x="-89.489" y="17">with $1K transaction volume/</tspan><tspan x="-103.12" y="38">transaction fee $30</tspan><tspan y="38" font-family="PingFangSC-Regular, PingFang SC">＋</tspan><tspan y="38">interest $50</tspan></text>
+    <line id="Line_178" data-name="Line 178" x2="112" transform="translate(-18882 6115.5)" fill="none" stroke="#3a3f4e" stroke-width="1"/>
+    <rect id="Rectangle_463" data-name="Rectangle 463" width="57" height="29" transform="translate(-18854 6101)" fill="#5d6676"/>
+    <text id="Invite" transform="translate(-18825 6121)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="-16.731" y="0">Invite</tspan></text>
+    <line id="Line_216" data-name="Line 216" x1="136.5" transform="translate(-19262.5 6117.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_217" data-name="Line 217" x2="136.5" transform="translate(-19262.5 6224.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <rect id="Rectangle_461" data-name="Rectangle 461" width="57" height="29" transform="translate(-19223 6103)" fill="#5d6676"/>
+    <text id="Invite-2" data-name="Invite" transform="translate(-19195 6123)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="-16.731" y="0">Invite</tspan></text>
+    <rect id="Rectangle_462" data-name="Rectangle 462" width="57" height="29" transform="translate(-19223 6210)" fill="#5d6676"/>
+    <text id="Invite-3" data-name="Invite" transform="translate(-19195 6230)" fill="#fff" font-size="14" font-family="Helvetica"><tspan x="-16.731" y="0">Invite</tspan></text>
+  </g>
+</svg>

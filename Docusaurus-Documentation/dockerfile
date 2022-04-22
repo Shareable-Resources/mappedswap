@@ -1,0 +1,15 @@
+FROM node:current-alpine3.15
+
+WORKDIR /mappedswap-documentation
+
+COPY package.json ./
+
+COPY yarn.lock ./
+
+RUN yarn install --frozen-lockfile
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["yarn", "run", "serve", "--", "--build"]

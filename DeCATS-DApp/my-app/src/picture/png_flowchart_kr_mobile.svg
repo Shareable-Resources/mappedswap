@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="323" height="460" viewBox="0 0 323 460">
+  <g id="Group_11818" data-name="Group 11818" transform="translate(20213 -6904)">
+    <g id="Group_11816" data-name="Group 11816" transform="translate(-774 207)">
+      <g id="Group_11817" data-name="Group 11817">
+        <g id="Rectangle_492" data-name="Rectangle 492" transform="translate(-19349 6697)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+          <rect width="136" height="102" stroke="none"/>
+          <rect x="0.5" y="0.5" width="135" height="101" fill="none"/>
+        </g>
+        <g id="Rectangle_493" data-name="Rectangle 493" transform="translate(-19438 6893)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+          <rect width="136" height="101" stroke="none"/>
+          <rect x="0.5" y="0.5" width="135" height="100" fill="none"/>
+        </g>
+        <g id="Rectangle_494" data-name="Rectangle 494" transform="translate(-19252 6894)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+          <rect width="136" height="100" stroke="none"/>
+          <rect x="0.5" y="0.5" width="135" height="99" fill="none"/>
+        </g>
+        <g id="Rectangle_495" data-name="Rectangle 495" transform="translate(-19439 7056)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+          <rect width="136" height="101" stroke="none"/>
+          <rect x="0.5" y="0.5" width="135" height="100" fill="none"/>
+        </g>
+        <text id="사용자_A_0_거래량_" data-name="사용자 A
+$0 거래량 " transform="translate(-19281 6745)" fill="#fff" font-size="10" font-family="MalgunGothic, Malgun Gothic"><tspan x="-19.595" y="0">사용자</tspan><tspan y="0" xml:space="preserve" font-family="SegoeUI, Segoe UI"> A</tspan><tspan font-family="SegoeUI, Segoe UI"><tspan x="-23.13" y="14">$0 </tspan><tspan y="14" font-family="MalgunGothic, Malgun Gothic">거래량</tspan><tspan y="14"> </tspan></tspan></text>
+        <text id="사용자_B_150K_거래량_450_거래수수료_50_이자수수료" data-name="사용자 B
+$150K 거래량/
+$450 거래수수료 
++ $50 이자수수료" transform="translate(-19370 6927)" fill="#fff" font-size="10" font-family="MalgunGothic, Malgun Gothic"><tspan x="-19.236" y="0">사용자</tspan><tspan y="0" xml:space="preserve" font-family="SegoeUI, Segoe UI"> B</tspan><tspan font-family="SegoeUI, Segoe UI"><tspan x="-32" y="14">$150K </tspan><tspan y="14" font-family="MalgunGothic, Malgun Gothic">거래량</tspan><tspan y="14">/</tspan><tspan x="-38.521" y="28">$450 </tspan><tspan y="28" font-family="MalgunGothic, Malgun Gothic">거래수수료</tspan><tspan y="28"> </tspan><tspan x="-39.246" y="42">+ $50 </tspan><tspan y="42" font-family="MalgunGothic, Malgun Gothic">이자수수료</tspan></tspan></text>
+        <text id="사용자_C_400K_거래량_1200_거래수수료_100_이자수수료" data-name="사용자 C
+$400K 거래량/
+$1200 거래수수료 + 
+$100 이자수수료" transform="translate(-19182 6927)" fill="#fff" font-size="10" font-family="MalgunGothic, Malgun Gothic"><tspan x="-19.465" y="0">사용자</tspan><tspan y="0" xml:space="preserve" font-family="SegoeUI, Segoe UI"> C</tspan><tspan font-family="SegoeUI, Segoe UI"><tspan x="-32" y="14">$400K </tspan><tspan y="14" font-family="MalgunGothic, Malgun Gothic">거래량</tspan><tspan y="14">/</tspan><tspan x="-46.006" y="28">$1200 </tspan><tspan y="28" font-family="MalgunGothic, Malgun Gothic">거래수수료</tspan><tspan y="28" xml:space="preserve"> + </tspan><tspan x="-37.151" y="42">$100 </tspan><tspan y="42" font-family="MalgunGothic, Malgun Gothic">이자수수료</tspan></tspan></text>
+        <text id="사용자_D_1K_거래량_30_거래수수료_50_이자수수료" data-name="사용자 D
+$1K 거래량/$30 거래수수료 
++ $50 이자수수료" transform="translate(-19370 7093)" fill="#fff" font-size="10" font-family="MalgunGothic, Malgun Gothic"><tspan x="-19.875" y="0">사용자</tspan><tspan y="0" xml:space="preserve" font-family="SegoeUI, Segoe UI"> D</tspan><tspan font-family="SegoeUI, Segoe UI"><tspan x="-62.434" y="14">$1K </tspan><tspan y="14" font-family="MalgunGothic, Malgun Gothic">거래량</tspan><tspan y="14">/$30 </tspan><tspan y="14" font-family="MalgunGothic, Malgun Gothic">거래수수료</tspan><tspan y="14"> </tspan><tspan x="-39.246" y="28">+ $50 </tspan><tspan y="28" font-family="MalgunGothic, Malgun Gothic">이자수수료</tspan></tspan></text>
+        <path id="Path_9992" data-name="Path 9992" d="M94,0H27.183L0,106.747" transform="translate(-19176.254 6799) rotate(90)" fill="none" stroke="#3a3f4e" stroke-width="1"/>
+        <path id="Path_9993" data-name="Path 9993" d="M94,96.655H27.183L0,0" transform="translate(-19280.697 6799) rotate(90)" fill="none" stroke="#3a3f4e" stroke-width="1"/>
+        <rect id="Rectangle_496" data-name="Rectangle 496" width="94" height="29" transform="translate(-19421 6832)" fill="#5d6676"/>
+        <text id="초대하세요" transform="translate(-19373 6852)" fill="#fff" font-size="14" font-family="MalgunGothic, Malgun Gothic"><tspan x="-35" y="0">초대하세요</tspan></text>
+        <rect id="Rectangle_497" data-name="Rectangle 497" width="89" height="29" transform="translate(-19230 6832)" fill="#5d6676"/>
+        <line id="Line_221" data-name="Line 221" y2="62" transform="translate(-19373.5 6994.5)" fill="none" stroke="#3a3f4e" stroke-width="1"/>
+        <rect id="Rectangle_498" data-name="Rectangle 498" width="94" height="29" transform="translate(-19421 7011)" fill="#5d6676"/>
+        <text id="초대하세요-2" data-name="초대하세요" transform="translate(-19374 7032)" fill="#fff" font-size="14" font-family="MalgunGothic, Malgun Gothic"><tspan x="-35" y="0">초대하세요</tspan></text>
+      </g>
+    </g>
+    <text id="초대하세요-3" data-name="초대하세요" transform="translate(-19958 7060)" fill="#fff" font-size="14" font-family="MalgunGothic, Malgun Gothic"><tspan x="-35" y="0">초대하세요</tspan></text>
+  </g>
+</svg>

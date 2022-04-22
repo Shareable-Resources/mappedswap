@@ -1,0 +1,26 @@
+.react-datepicker-popper {
+
+    @media only screen and (max-width: 960px) {
+        width: 25em;
+        position: absolute;
+        inset: 0rem -2rem !important;
+    }
+}
+
+.react-datepicker {
+    width: 100%;
+}
+
+.react-datepicker__month-container {
+    width: 75%;
+}
+
+.react-datepicker__month {
+    width: 100%;
+    margin: 0;
+}
+
+.react-datepicker__time-container {
+    width: 25%;
+}
+

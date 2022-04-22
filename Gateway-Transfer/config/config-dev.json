@@ -1,0 +1,36 @@
+{
+    "rpc": "https://rpc.eurus.dev",
+    "pollingApi": "http://devpaymentgatewayapi.mobicdn.cn:3000/merchants/MSW",
+    "pollingApiKey": "25e339d1-35cd-4a41-a2d8-220208cad21d",
+    "pollingInterval": 5000,
+    "pollingLimit":3,
+    "eunRewards":"0.1",
+    "postgre": {
+      "options": {
+        "username": "christopher",
+        "_password": "_PW0E,emS3+<xW>S^nZQ",
+        "password": "6a5c04c7988d13a3030180c37d0a4c0b03af84c5c4d4dfc904ed81e9da42216d68508f147d367e51087781a911df667171bd2dca39fb4261701a22438e4b80b63b100564a53da17d66bbba22e166e2b8aa73b69c546341c6c464662ab7326b47b56fba210c88e377b91f34c3f8117737b3",
+        "database": "postgres",
+        "host": "13.228.21.221",
+        "post": 5432,
+        "dialect": "postgres"
+      }
+    },
+    "tokens": {
+      "USDM":{
+        "address": "0xEf3105EF306105364425A9B67393C0D389336a1F",
+        "decimals":6
+      },
+      "BTCM":{
+        "address": "0x69458400FF11Dc765D7A407D1f6205e112CC6C67",
+        "decimals":18
+      },
+      "ETHM":{
+        "address": "0x26d11C81cc430F500E16D0b989486D0957641375",
+        "decimals":18
+      }
+    },
+    "pool": {
+      "address" : "0x98B726387a96b4D541c98Be15b064689d2B768FA"
+    }
+}

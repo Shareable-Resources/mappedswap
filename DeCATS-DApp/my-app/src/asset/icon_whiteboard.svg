@@ -1,0 +1,7 @@
+<svg id="whiteboard" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <path id="Path_168" data-name="Path 168" d="M241,286h1.465v1.465H241Zm0,0" transform="translate(-229.232 -272.035)" fill="#e0c89b"/>
+  <path id="Path_169" data-name="Path 169" d="M121,196h1.465v5.859H121Zm0,0" transform="translate(-115.092 -186.43)" fill="#e0c89b"/>
+  <path id="Path_170" data-name="Path 170" d="M52.07,134.184V121H30v13.184H40.3v1.649a2.2,2.2,0,1,0,1.465,0v-1.649Zm-11.035,4.443a.732.732,0,1,1,.732-.732A.733.733,0,0,1,41.035,138.627Zm8.057-11.035H44.7v-1.465h4.395Zm-2.93-4.395h2.93v1.465h-2.93Zm-2.93,0H44.7v1.465H43.232Zm-10.254,0h4.395v2.93H40.3v1.465h2.93v2.93H44.7v1.465H32.979Zm0,0" transform="translate(-28.535 -115.092)" fill="#fff"/>
+  <path id="Path_171" data-name="Path 171" d="M181,256h1.465v2.93H181Zm0,0" transform="translate(-172.162 -243.5)" fill="#e0c89b"/>
+  <path id="Path_172" data-name="Path 172" d="M12.5,0a2.2,2.2,0,0,0-2.072,1.465H0V4.443H25V1.465H14.572A2.2,2.2,0,0,0,12.5,0Zm0,0" fill="#e0c89b"/>
+</svg>

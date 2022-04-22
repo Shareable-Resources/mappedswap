@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "../../dist/tsc/build",
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node"
+  },
+  "include": [
+    "../../foundation/*.ts",
+    "*.ts",
+    "../../general/1_EnterPriKey.ts"
+  ],
+  "exclude": ["node_modules"],
+  "extends": "../../tsconfig.json"
+}

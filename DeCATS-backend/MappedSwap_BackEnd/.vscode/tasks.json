@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "enterKeys",
+      "type": "shell",
+      "command": "sh",
+      "args": ["script/enterKeys.sh"]
+    },
+    {
+      "label": "tscPreTasks",
+      "type": "shell",
+      "command": "./node_modules/.bin/tsc --p tsconfig.json"
+    },
+    {
+      "label": "debugService",
+      "dependsOn": ["tscPreTasks", "enterKeys"]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "file_no",
+      "type": "command",
+      "command": "extension.commandvariable.rememberPick",
+      "args": { "key": "lastnumber" }
+    },
+    {
+      "id": "tsconfigJsonPath",
+      "type": "command",
+      "command": "extension.commandvariable.remember",
+      "args": { "default": "tsconfig.json" }
+    }
+  ]
+}

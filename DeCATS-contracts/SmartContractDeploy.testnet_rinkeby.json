@@ -1,0 +1,33 @@
+{
+    "4": {
+        "smartContract": {
+            "EthereumERC20": {
+                "address": "0x546ab8dA6AA4877972BA06f4345A16874C7B22a6"
+            },
+            "UpgradeableBeacon<EthereumERC20>": {
+                "address": "0x2ECad14cA9EeD7418D9108Fa4019e761163cbcCA"
+            },
+            "OwnedBeaconProxy<USDM>": {
+                "address": "0x9e37125809C3189E9521804909A23FEBF2666405"
+            },
+            "OwnedBeaconProxy<BTCM>": {
+                "address": "0x3313B294680326c349D8B6562d966713275EB49F"
+            },
+            "OwnedBeaconProxy<ETHM>": {
+                "address": "0x1e4Db66A9ad7b8312d3844F3f6D22a3677658ED3"
+            },
+            "OwnedBeaconProxy<MST>": {
+                "address": "0x51b9C5f3F12Aae2A365672E7f262e134543C899A"
+            },
+            "MST": {
+                "address": "0x51b9C5f3F12Aae2A365672E7f262e134543C899A"
+            },
+            "USDC": {
+                "address": "0x4861b2e94aC9486280d648ffE2E4ED961054541F"
+            },
+            "WBTC": {
+                "address": "0x75b0fD79e53A3E20D20e32833083f4d94bf40Fa3"
+            }
+        }
+    }
+}

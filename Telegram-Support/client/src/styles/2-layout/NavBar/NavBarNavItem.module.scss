@@ -1,0 +1,33 @@
+@use '../../1-abstracts' as *;
+
+.navItem {
+  background-color: #fff;
+
+  .navBarItem {
+    display: flex;
+    align-items: center;
+    padding: 22px 0px 22px 37px;
+    .navBarName {
+      font-size: '14px';
+      line-height: '17px';
+      font-weight: 500;
+      margin-left: 15px;
+    }
+  }
+  .activeNavBarItem {
+    color: $green-primary;
+    border-left: 6px solid $green-primary;
+    background-color: rgba(126, 182, 131, 0.2);
+    img {
+      filter: invert(65%) sepia(19%) saturate(602%) hue-rotate(75deg) brightness(99%) contrast(90%);
+    }
+  }
+  .inactiveNavBarItem {
+    color: $gray-text;
+    border-left: 6px solid #fff;
+    // TODO:
+    // img {
+    // NEED IMAGE COLOR FOR FILL
+    // }
+  }
+}

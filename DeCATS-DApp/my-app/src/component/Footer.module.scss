@@ -1,0 +1,49 @@
+@import "../style/variables.module.scss";
+
+#footer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: $lightgrey;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  font-size: $font5;
+  // width: 100%;
+
+  .header {
+    font-size: $font6;
+    color: $white;
+    padding-bottom: 0.5vw;
+    font-weight: 1000;
+  }
+  @media only screen and (max-width: 960px) {
+    margin-top: 4vw;
+    width: 100%;
+    padding-left: 2vw;
+    font-size: $font4;
+  }
+
+  .icons-container {
+    display: flex;
+    padding-bottom: 0.5vw;
+
+    .card-icon {
+      margin-right: 0.5vw;
+
+      cursor: pointer;
+
+      @media only screen and (max-width: 960px) {
+        height: 5vw;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 960px) {
+      margin-bottom: 2vw;
+    }
+  }
+}

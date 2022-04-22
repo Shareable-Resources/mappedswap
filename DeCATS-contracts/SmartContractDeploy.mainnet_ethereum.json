@@ -1,0 +1,57 @@
+{
+    "1": {
+        "smartContract": {
+            "EthereumERC20": {
+                "address": "0x1f781194F15aa7488986697a3d6706F420B369fa"
+            },
+            "UpgradeableBeacon<EthereumERC20>": {
+                "address": "0x52980e38866Bc070c4b29107B82BBD40034d5191"
+            },
+            "OwnedBeaconProxy<USDM>": {
+                "address": "0xbbAec992fc2d637151dAF40451f160bF85f3C8C1"
+            },
+            "OwnedBeaconProxy<BTCM>": {
+                "address": "0x36f9975d8184a65be42290D5A8764Dc97f3D9396"
+            },
+            "OwnedBeaconProxy<ETHM>": {
+                "address": "0xf80FC1ce16cBCBD18421E9Cd055CA1Bb58A9E097"
+            },
+            "OwnedBeaconProxy<MST>": {
+                "address": "0x03cBf57eCE7948FE6fD38891e287811C0B849EE1"
+            },
+            "MST": {
+                "address": "0x03cBf57eCE7948FE6fD38891e287811C0B849EE1"
+            },
+            "USDC": {
+                "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+            },
+            "WBTC": {
+                "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+            },
+            "WETH": {
+                "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+            },
+            "UniswapV3_WBTC_USDC_Pool": {
+                "address": "0x99ac8cA7087fA4A2A1FB6357269965A2014ABc35"
+            },
+            "UniswapV3_USDC_WETH_Pool": {
+                "address": "0x8ad599c3A0ff1De082011EFDDc58f1908eb6e6D8"
+            },
+            "MiningPool": {
+                "address": "0x797712D8C1B3F8af9220F4557f84b0772C412F5b"
+            },
+            "UpgradeableBeacon<MiningPool>": {
+                "address": "0xB27ce651349288f9F10e4b3eEc538c17Ea7D37c9"
+            },
+            "OwnedBeaconProxy<USDMiningPool>": {
+                "address": "0x92Cb5f00024F481063bcCF5bF00f96004570917c"
+            },
+            "OwnedBeaconProxy<BTCMiningPool>": {
+                "address": "0x0135c4a842E39A39cc0d36093540214b4c3B98C5"
+            },
+            "OwnedBeaconProxy<ETHMiningPool>": {
+                "address": "0xE9d2c9562bEa856897d4Eb334FFe6289a034B045"
+            }
+        }
+    }
+}

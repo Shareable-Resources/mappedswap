@@ -1,0 +1,18 @@
+@use '../../1-abstracts' as *;
+
+.navBarOption {
+  display: flex;
+  margin-left: 43px;
+  color: $gray-text;
+  font-weight: 500;
+  font-size: 14px;
+  &:not(:last-child) {
+    margin-bottom: 53px;
+  }
+  img {
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+    filter: invert(59%) sepia(4%) saturate(18%) hue-rotate(323deg) brightness(100%) contrast(97%);
+  }
+}

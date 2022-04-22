@@ -1,0 +1,81 @@
+{
+    "1008": {
+        "smartContract": {
+            "Multicall": {
+                "address": "0x4FF1B228831Cf6031BABa9A99a4A185584E2A900"
+            },
+            "WrappedEUN": {
+                "address": "0x55029ef3FEf4c18dD9f811a7974e5C52FF12E050"
+            },
+            "OwnedUpgradeableProxy<WEUN>": {
+                "address": "0x973a67f56D266B18C7F1A03e1E241e3D617334bC"
+            },
+            "MappedSwapToken": {
+                "address": "0x42E105b03152A8Ae40f09284cbB1C88C0c5a2252"
+            },
+            "UpgradeableBeacon<MappedSwapToken>": {
+                "address": "0x320380C3945D204590C65a31dB7D515DeEd9B85C"
+            },
+            "OwnedBeaconProxy<USDM>": {
+                "address": "0x26c7e2f855A3C1Eb519515197b22135F9484b26D"
+            },
+            "OwnedBeaconProxy<BTCM>": {
+                "address": "0x1e14301749bd9B8c8A865C5D823FEB16450F7738"
+            },
+            "OwnedBeaconProxy<ETHM>": {
+                "address": "0x1a958F28b595D32F8111e0B8b000110BD6422E7c"
+            },
+            "RaijinSwapFactory": {
+                "address": "0x7504896A54DC8210325F47461bab4d407b91217b"
+            },
+            "OwnedUpgradeableProxy<RaijinSwapFactory>": {
+                "address": "0xCe2CBF5822b0A4b312F3d4c19753d17b6A7b37a3"
+            },
+            "RaijinSwapRouter": {
+                "address": "0x62D3B38DC522FaB83D71d84cBa2042c03946eAd7"
+            },
+            "OwnedUpgradeableProxy<RaijinSwapRouter>": {
+                "address": "0xe0464fc0fB13428Cc6EcDcA48A36874649c82001"
+            },
+            "PoolCore": {
+                "address": "0x55EAE9E54223aAfb24631758369E670daC7085Bf"
+            },
+            "OwnedUpgradeableProxy<Pool>": {
+                "address": "0x33a03a7B865107eD34b627AD5e267B512F9B1D98"
+            },
+            "PoolManagement": {
+                "address": "0x3302274A75814CF9F5306E7755fd5B79220Cd4b8"
+            },
+            "PriceAdjust": {
+                "address": "0x4094Fe1AB9095231F3351bBdefc69D110769c530"
+            },
+            "OwnedUpgradeableProxy<PriceAdjust>": {
+                "address": "0xD0D1d1c197814DFE1F1E86A29AE4d7012C4b0186"
+            },
+            "Payout": {
+                "address": "0xaa16C2dC44e733301A50b458DfB02d7cb90F29C2"
+            },
+            "OwnedUpgradeableProxy<Payout>": {
+                "address": "0xe1cE0E85c5969d33effE12dA3B193712285Dfb95"
+            },
+            "AgentData": {
+                "address": "0x78CB7072F9F57b8fc11deaD749F5bbB058677d90"
+            },
+            "OwnedUpgradeableProxy<AgentData>": {
+                "address": "0xa5ad41638D5F21c47A16522A6a66193Ce5779491"
+            },
+            "OwnedBeaconProxy<MST>": {
+                "address": "0x458b661aa4a7D5690eAea99A30f3665675fabf99"
+            },
+            "Staking": {
+                "address": "0x85De05d33deD52aA376124bD4faFafb22CB80B9a"
+            },
+            "OwnedUpgradeableProxy<Staking>": {
+                "address": "0xF34CA134be8aE972BF01341C36e38e2d09814ca9"
+            },
+            "PaymentProxy": {
+                "address": "0x9ee5E4ece59d5DbbCF476332fFB202545Ee27c05"
+            }
+        }
+    }
+}

@@ -1,0 +1,175 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "inserter", "type": "address" },
+      { "indexed": true, "internalType": "bytes32", "name": "hashedKey", "type": "bytes32" },
+      { "indexed": false, "internalType": "bytes32", "name": "dataHash", "type": "bytes32" }
+    ],
+    "name": "DataInserted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "previousOwner", "type": "address" },
+      { "indexed": true, "internalType": "address", "name": "newOwner", "type": "address" }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "approver", "type": "address" },
+      { "indexed": true, "internalType": "bytes32", "name": "hashedKey", "type": "bytes32" },
+      { "indexed": false, "internalType": "bytes32", "name": "dataHash", "type": "bytes32" }
+    ],
+    "name": "UpdateApproved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "updater", "type": "address" },
+      { "indexed": true, "internalType": "bytes32", "name": "hashedKey", "type": "bytes32" },
+      { "indexed": false, "internalType": "bytes32", "name": "oldDataHash", "type": "bytes32" },
+      { "indexed": false, "internalType": "bytes32", "name": "newDataHash", "type": "bytes32" }
+    ],
+    "name": "UpdateProposed",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  { "inputs": [], "name": "renounceOwnership", "outputs": [], "stateMutability": "nonpayable", "type": "function" },
+  {
+    "inputs": [{ "internalType": "address", "name": "newOwner", "type": "address" }],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  { "inputs": [], "name": "initialize", "outputs": [], "stateMutability": "nonpayable", "type": "function" },
+  {
+    "inputs": [{ "internalType": "bytes32", "name": "hashedKey", "type": "bytes32" }],
+    "name": "hashes",
+    "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "bytes32", "name": "hashedKey", "type": "bytes32" }],
+    "name": "proposals",
+    "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "bytes32", "name": "hashedKey", "type": "bytes32" },
+      { "internalType": "bytes", "name": "data", "type": "bytes" }
+    ],
+    "name": "verifyData",
+    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "bytes32", "name": "hashedKey", "type": "bytes32" },
+      { "internalType": "bytes", "name": "data", "type": "bytes" }
+    ],
+    "name": "insertData",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "bytes32", "name": "hashedKey", "type": "bytes32" },
+      { "internalType": "bytes", "name": "data", "type": "bytes" }
+    ],
+    "name": "updateData",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "bytes32", "name": "hashedKey", "type": "bytes32" },
+      { "internalType": "bytes", "name": "data", "type": "bytes" }
+    ],
+    "name": "approveData",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getInserters",
+    "outputs": [{ "internalType": "address[]", "name": "", "type": "address[]" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getUpdaters",
+    "outputs": [{ "internalType": "address[]", "name": "", "type": "address[]" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getApprovers",
+    "outputs": [{ "internalType": "address[]", "name": "", "type": "address[]" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "inserterAddr", "type": "address" }],
+    "name": "grantInserter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "updaterAddr", "type": "address" }],
+    "name": "grantUpdater",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "approverAddr", "type": "address" }],
+    "name": "grantApprover",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "inserterAddr", "type": "address" }],
+    "name": "revokeInserter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "updaterAddr", "type": "address" }],
+    "name": "revokeUpdater",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "approverAddr", "type": "address" }],
+    "name": "revokeApprover",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

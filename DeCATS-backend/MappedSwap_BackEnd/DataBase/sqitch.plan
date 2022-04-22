@@ -1,0 +1,32 @@
+%syntax-version=1.0.0
+%project=database
+
+20220222_db_init 2022-03-09T02:31:07Z System Administrator <root@admindeMBP.lan> # Initialized database sturcture
+20220223_data_init 2022-03-09T02:51:38Z System Administrator <root@admindeMBP.lan> # Insert initialized data
+20220224_add_column_price_balances_histories 2022-03-08T07:18:22Z System Administrator <root@admindeMacBook-Pro.local> # Add column price to t_decats_balance_histories
+20220227_add_constraint_commission_distributions 2022-03-08T08:20:27Z System Administrator <root@admindeMacBook-Pro.local> # Add agent constraint t_decats_agents.agent_id
+20220227_add_column_unrealized_interest_balances_snapshots 2022-03-08T08:42:50Z System Administrator <root@admindeMacBook-Pro.local> # Add column interest to unrealized_interest in t_decats_balances_snapshots
+20220228_create_t_decats_testSqitch 2022-02-28T06:52:59Z System Administrator <root@christopher-MacBook-Air.local> # Test first sqitch
+20220303_create_table_profit_and_loss_reports 2022-03-08T08:46:07Z System Administrator <root@admindeMacBook-Pro.local> # Create table t_decats_profit_and_loss_reports
+20220303_add_column_unrealized_interest_profit_daily_reports 2022-03-08T08:48:22Z System Administrator <root@admindeMacBook-Pro.local> # Add column unrealized_interest to  t_decats_profit_daily_reports
+20220304_add_column_profit_and_loss_profit_and_loss_reports 2022-03-08T08:50:24Z System Administrator <root@admindeMacBook-Pro.local> # Add column profit_and_loss to t_decats_profit_and_loss_reports
+20220304_create_t_decats_stake_rewards 2022-03-04T08:52:18Z System Administrator <root@christopher-MacBook-Air.local> # Add t_decats_stake_rewards
+20220307_create_table_daily_statistic_reports 2022-03-08T09:44:36Z System Administrator <root@admindeMacBook-Pro.local> # Create table t_decats_daily_statistic_reports
+
+20220309_NON_LOCAL_ENV_UPDATE_FROM_HERE 2022-03-09T04:41:56Z System Administrator <root@admindeMacBook-Pro.local> # All db changefor all testing env or production env starts from here
+20220309_2_t_decats_connected_wallets 2022-03-09T07:50:00Z System Administrator <root@admindeMacBook-Pro.local> # Create table for connected wallet records
+20220310_Create_t_decats_stake_rewards 2022-03-10T07:07:17Z System Administrator <root@christopher-MacBook-Air.local> # Test first sqitch
+20220310_Alter_t_decats_stake_rewards 2022-03-10T07:11:31Z System Administrator <root@christopher-MacBook-Air.local> # Test first sqitch
+20220311_CREATE_INDEX_t_decats_block_prices_create_date 2022-03-11T01:11:21Z System Administrator <root@christopher-MacBook-Air.local> # CREATE INDEX t_decats_block_prices_create_date
+20220311_Add_indexes 2022-03-11T01:16:18Z System Administrator <root@christopher-MacBook-Air.local> # CREATE INDEXES
+20220316_create_index_on_reports 2022-03-16T03:18:07Z System Administrator <root@admindeMacBook-Pro.local> # create index on reports
+20220318_create_table_example_table 2022-03-18T06:50:17Z System Administrator <root@admindeMacBook-Pro.local> # Example table
+20220331_01_create_table_event 2022-03-31T10:00:28Z System Administrator <root@admindeMacBook-Pro.local> # Create t_decats_events,t_decats_event_participants,t_decats_event_approvals
+20220331_02_alter_table_event_txHash_null 2022-03-31T10:26:41Z System Administrator <root@admindeMacBook-Pro.local> # alter txHash to null
+20220401_01_create_table_leaderboard_rule 2022-03-29T01:12:40Z System Administrator <root@Brians-Macbook-Pro.local> # LeaderBoard Rule table
+20220401_02_add_approval_columns 2022-04-01T07:57:18Z System Administrator <root@admindeMacBook-Pro.local> # Add columns to t_decats_event_approvals
+20220404_01_alter_event_approvals_txHash_null 2022-04-04T08:20:07Z System Administrator <root@admindeMacBook-Pro.local> # Alter t_decats_event_approvals.tx_hash to nullable
+20220404_02_create_table_leaderboard_rankings 2022-04-05T01:20:46Z Brian Wang <brianwang@Brians-Macbook-Pro.local> # LeaderBoard Ranking table
+20220414_leaderboard_ranking_drop_equity_column 2022-04-14T06:20:22Z System Administrator <root@admindeMBP> # drop t_decats_leaderboard equity_start and equity_end
+202204142_create_table_event_trade_volumes 2022-04-14T06:59:32Z System Administrator <root@admindeMBP> # Create t_decats_event_trade_volumes
+20220419_01_add_index_transaction_table 2022-04-19T03:14:29Z System Administrator <root@admindeMBP> # Add index to transaction table

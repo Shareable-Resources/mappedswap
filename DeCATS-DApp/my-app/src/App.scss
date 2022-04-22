@@ -1,0 +1,178 @@
+@import "style/variables.module.scss";
+
+html {
+  height: -webkit-fill-available;
+}
+
+.App {
+  text-align: center;
+  // padding: 0 10vw 0 10vw;
+  background-color: #121212;
+  height: 100vh;
+  min-height: -webkit-fill-available;
+  font-family: "Poppins", sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.popover-body {
+  display: flex;
+  background-color: $black;
+  border: solid $white 1px;
+  // border-radius: 20px;
+  overflow: hidden;
+}
+
+[type="button"] {
+  -webkit-appearance: none !important;
+}
+
+.MuiToggleButton-secondary {
+  color: $grey !important;
+  border: none !important;
+}
+
+.MuiSelect-select.MuiInputBase-input.MuiOutlinedInput-input {
+  padding: 5px 30px 5px 5px;
+  color: $white;
+  // display: flex;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    display: flex;
+  }
+}
+.MuiToggleButton-root {
+  padding: 0 10px 0 10px !important;
+  font-size: $font3 !important;
+}
+
+.MuiFormControl-root {
+  width: 100% !important;
+}
+
+.MuiToggleButton-secondary.Mui-selected {
+  color: $white !important;
+  background-color: $green !important;
+  border: none !important;
+}
+
+.MuiToggleButtonGroup-grouped {
+  border-radius: inherit !important;
+}
+
+.MuiToggleButtonGroup-grouped:not(:first-of-type) {
+  border-radius: inherit !important;
+}
+
+.MuiSvgIcon-root.MuiSelect-icon {
+  color: $white !important;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.MuiPopover-paper {
+  background-color: $black;
+  color: $white;
+  border: 1px solid $bordergrey;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: $green !important;
+}
+
+::-webkit-scrollbar {
+  background: $black !important;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $level2grey !important;
+  border-radius: 10px;
+  border: 2px solid $level2grey;
+}
+
+.container {
+  max-width: 3000px !important;
+}
+
+.modal-open {
+  padding: 0 !important;
+}
+
+.modal-content {
+  background-color: $black !important;
+}
+
+.MuiMenuItem-root,
+.MuiMenuItem-gutters .MuiButtonBase-root {
+  display: flex !important;
+  width: 100% !important;
+  justify-content: space-between !important;
+
+  span {
+    display: flex;
+    color: $white !important;
+    * {
+      height: 20px;
+      margin-right: 3px;
+      @media only screen and (max-width: 960px) {
+        height: 6vw;
+      }
+    }
+  }
+}
+
+a {
+  color: $green !important;
+}
+
+a:hover {
+  color: $blue !important;
+}

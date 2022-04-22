@@ -1,0 +1,38 @@
+{
+  "name": "CronJob-local",
+  "sequelize": {
+    "comment": "Specifying sequlize config",
+    "database": "postgres",
+    "username": "postgres",
+    "password": "d18d4ccf53cfd37773655cad4914077c030827344a6364e31e6bee11d97c7ad187781f2a093bf4ea07bf333065bdd60ddf32d4708813d4d7ae63ec9b9d8c0726eea2ee709b1bdca01cb4939e611008de520a66fac16bad9736afcb6b29a3407f88",
+    "host": "127.0.0.1",
+    "type": "postgres",
+    "port": 5432,
+    "schema": "public",
+    "timezone": "+08:00",
+    "logging": false
+  },
+  "express": {
+    "comment": "Specifying express config",
+    "port": 8096
+  },
+  "winston": {
+    "comment": "Specifying winston config, when set console : true, logger will log in console in addition to standard log file",
+    "console": true
+  },
+  "cronJob": {
+    "comment": "0 05 00 ? * *  --- At 00:05:00am every day",
+    "dailySettlement": {
+      "distWeekDays": [
+        [1, 2],
+        [3, 4],
+        [5, 6, 7]
+      ],
+      "cronFormat": {
+        "realTime": "*/15 * * * *",
+        "monitorCronJob": "*/1 * * * *"
+      }
+    },
+    "chunks": 10000
+  }
+}

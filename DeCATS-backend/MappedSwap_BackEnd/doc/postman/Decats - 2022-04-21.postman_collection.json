@@ -1,0 +1,3337 @@
+{
+	"info": {
+		"_postman_id": "0785db9f-063b-42b3-b6c4-fc02d81097bc",
+		"name": "Decats - 2022-04-21",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DApp",
+			"item": [
+				{
+					"name": "{{ipDApp}}/customers/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"signature\": \"0x46d930e710618e4b15636c3183160b1101e9753482dbbed3b9c7115ce72c58bc1d616e12aa29cbbb171fb849623062be8943024b9f007c9962c45befdec9975e1b\",\n    \"message\": \"deviceId=&timestamp=1638868006510&walletAddress=227460d406f0937ecd982b20cfff5a92e7fc4c2b\",\n    \"address\": \"0x227460d406f0937ecd982b20cfff5a92e7fc4c2b\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipDApp}}/customers/login",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"customers",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/customers/loginByDeveloper",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"address\": \"0x4dfb6d6790054f3eb68324bc230e3104137ca8db\",\n    \"fundingCode\": \"eyJleHAiOjE2MzU0OTA0MjN9.xkSwdiaCPhLI-bjZnixrQfvlVPputWam4doZzmKCrAM\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipDApp}}/customers/loginByDeveloper",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"customers",
+								"loginByDeveloper"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/customers/loadFundingCode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{tokenDApp}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fundingCode\": \"eyJleHAiOjE2MzY1NDE0NDl9.X13dwbiQe_NIAfMtYfezRI1tQ9HbwtcM2xXFRE4EM-E\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipDApp}}/customers/loadFundingCode",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"customers",
+								"loadFundingCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/connectedWallets/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{tokenDApp}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"address\": \"0x8f9092ce573e41d72378cf8c9d3335584e6843f1\",\n    \"connectedType\":0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipDApp}}/connectedWallets/create",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"connectedWallets",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/customers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{tokenDApp}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fundingCode\": \"eyJleHAiOjE2MzY1NDE0NDl9.X13dwbiQe_NIAfMtYfezRI1tQ9HbwtcM2xXFRE4EM-E\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipDApp}}/customers",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/profitAndLossReports",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{tokenDApp}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fundingCode\": \"eyJleHAiOjE2MzY1NDE0NDl9.X13dwbiQe_NIAfMtYfezRI1tQ9HbwtcM2xXFRE4EM-E\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipDApp}}/profitAndLossReports?recordPerPage=20&pageNo=0&dateFrom=2022-04-11&dateTo=2022-04-14",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"profitAndLossReports"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2022-04-11"
+								},
+								{
+									"key": "dateTo",
+									"value": "2022-04-14"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/profitAndLossReports/getCurrentPNL",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{tokenDApp}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipDApp}}/profitAndLossReports/getCurrentPNLTest?customerId=26",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"profitAndLossReports",
+								"getCurrentPNLTest"
+							],
+							"query": [
+								{
+									"key": "customerId",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/profitAndLossReports/getPNLUsersOver?recordPerPage=20&pageNo=0&profitAndLoss=1000&dateFrom=2022-01-01&dateTo=2022-04-11",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/profitAndLossReports/getPNLUsersOver?recordPerPage=20&pageNo=0&profitAndLoss=1000&dateFrom=2022-01-01&dateTo=2022-04-11",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"profitAndLossReports",
+								"getPNLUsersOver"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "profitAndLoss",
+									"value": "1000"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2022-01-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2022-04-11"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/prices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ipDApp}}/prices",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"prices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/priceHistories?recordPerPage=20&pageNo=0",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ipDApp}}/priceHistories?recordPerPage=10&pageNo=0&pairName=ETHM/USDM",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"priceHistories"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "10"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "pairName",
+									"value": "ETHM/USDM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/priceHistories/getKLineData",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ipDApp}}/priceHistories/getKLineData?pairName=BTCM/USDM&timeInterval=300",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"priceHistories",
+								"getKLineData"
+							],
+							"query": [
+								{
+									"key": "pairName",
+									"value": "BTCM/USDM"
+								},
+								{
+									"key": "timeInterval",
+									"value": "300"
+								},
+								{
+									"key": "toTime",
+									"value": "2021-10-15",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/priceHistories/getKLineDataVolumeSum",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ipDApp}}/priceHistories/getKLineDataVolumeSum?duration=24&pairName=BTCM/USDM",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"priceHistories",
+								"getKLineDataVolumeSum"
+							],
+							"query": [
+								{
+									"key": "duration",
+									"value": "24"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2021-10-27",
+									"disabled": true
+								},
+								{
+									"key": "pairName",
+									"value": "BTCM/USDM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/priceHistories/getHistoryPrice?pairName=BTCM/USDM",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ipDApp}}/priceHistories/getHistoryPrice?pairName=BTCM/USDM",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"priceHistories",
+								"getHistoryPrice"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2021-10-27",
+									"disabled": true
+								},
+								{
+									"key": "pairName",
+									"value": "BTCM/USDM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/interestHistories?recordPerPage=20&pageNo=0&address=0xd1abc154B43368b8B0B960fA9Ab84545cA1cf816",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenDApp}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipDApp}}/interestHistories?recordPerPage=20&pageNo=0&address=0x028fb0e5160bc19639450827c673445105d99071",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"interestHistories"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "address",
+									"value": "0x028fb0e5160bc19639450827c673445105d99071"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/transactions?recordPerPage=20&pageNo=0&address=0xd1abc154B43368b8B0B960fA9Ab84545cA1cf816",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{tokenDApp}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipDApp}}/transactions?recordPerPage=2&pageNo=0&address=0x028fb0e5160bc19639450827c673445105d99071",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "2"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "address",
+									"value": "0x028fb0e5160bc19639450827c673445105d99071"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/balancesHistories?recordPerPage=20&pageNo=0&type=1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenDApp}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipDApp}}/balancesHistories?recordPerPage=20&pageNo=0",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"balancesHistories"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/prices/getPairInfo?pairName=BTCM/USDM",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ipDApp}}/prices/getPairInfo?pairName=USDM/BTCM",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"prices",
+								"getPairInfo"
+							],
+							"query": [
+								{
+									"key": "pairName",
+									"value": "USDM/BTCM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/commissionJobs/getExpectedCommission",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenDApp}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipDApp}}/commissionJobs/getExpectedCommission?holdMST=0",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"commissionJobs",
+								"getExpectedCommission"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "BTCM",
+									"disabled": true
+								},
+								{
+									"key": "remark",
+									"value": "Job 2",
+									"disabled": true
+								},
+								{
+									"key": "holdMST",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/commissionJobs/getSubAgentsWeeklyCommission",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenDApp}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipDApp}}/commissionJobs/getSubAgentsWeeklyCommission",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"commissionJobs",
+								"getSubAgentsWeeklyCommission"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "BTCM",
+									"disabled": true
+								},
+								{
+									"key": "remark",
+									"value": "Job 2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/commissionJobs/getLedgers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenDApp}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipDApp}}/commissionJobs/getLedgers?recordPerPage=12&pageNo=0&dateYear=2022",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"commissionJobs",
+								"getLedgers"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "12"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "dateYear",
+									"value": "2022"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/commissionJobs/getLedgersDetails",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenDApp}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{ipDApp}}/commissionJobs/getLedgersDetails?cronJobId=120",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"commissionJobs",
+								"getLedgersDetails"
+							],
+							"query": [
+								{
+									"key": "cronJobId",
+									"value": "120"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/prices/getAllBlockPrice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ipDApp}}/prices/getAllBlockPrice?recordPerPage=20&pageNo=0&pairName=BTCM/USDM&dateFrom=2021-10-20 09:30&dateTo=2021-10-20 09:45",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"prices",
+								"getAllBlockPrice"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "pairName",
+									"value": "BTCM/USDM"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2021-10-20 09:30"
+								},
+								{
+									"key": "dateTo",
+									"value": "2021-10-20 09:45"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/mstDistRules",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ipDApp}}/mstDistRules",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"mstDistRules"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/balanceSnapshots/getProfitAndLoss?dateFrom=2022-02-24&dateTo=2022-02-25",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenDApp}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipDApp}}/balanceSnapshots/getProfitAndLoss?dateFrom=2022-02-24&dateTo=2022-02-25",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"balanceSnapshots",
+								"getProfitAndLoss"
+							],
+							"query": [
+								{
+									"key": "agentId",
+									"value": "4",
+									"disabled": true
+								},
+								{
+									"key": "dateFrom",
+									"value": "2022-02-24"
+								},
+								{
+									"key": "dateTo",
+									"value": "2022-02-25"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agent",
+			"item": [
+				{
+					"name": "{{ipAgent}}/profitDailyReports",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/profitDailyReports?recordPerPage=20&pageNo=0",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"profitDailyReports"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "agentId",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/eventTradeVolumes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/eventTradeVolumes?recordPerPage=20&pageNo=0&dateFrom=2022-04-10&dateTo=2022-04-14",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"eventTradeVolumes"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2022-04-10"
+								},
+								{
+									"key": "agentId",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "dateTo",
+									"value": "2022-04-14"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipDApp}}/leaderBoardRankings?recordPerPage=20&pageNo=0",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipDApp}}/leaderBoardRankings?recordPerPage=20&pageNo=0",
+							"host": [
+								"{{ipDApp}}"
+							],
+							"path": [
+								"leaderBoardRankings"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "agentId",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/pairDailyReports",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/pairDailyReports?recordPerPage=20&pageNo=0",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"pairDailyReports"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "agentId",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/balanceSnapshots",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/balanceSnapshots?recordPerPage=20&pageNo=0",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"balanceSnapshots"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "agentId",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agents",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/agents?recordPerPage=20&pageNo=0",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agents"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "agentId",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agents/details/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/agents/details/7",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agents",
+								"details",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/balanceSnapshots/getSubAgents",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/agents/getSubAgent?recordPerPage=20&pageNo=0",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agents",
+								"getSubAgent"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "agentId",
+									"value": "4",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agents/getNoOfNodes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/agents/getNoOfNodes",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agents",
+								"getNoOfNodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agents/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"address\": \"0xabaf0503d06ac5d222653f3294a134db3ca98e29\",\n    \"name\": \"vinceTest1\",\n    \"email\": \"vinceTest1@gmail.com\",\n    \"password\": \"0x48bed44d1bcd124a28c27f343a817e5f5243190d3c52bf347daf876de1dbbf77\",\n    \"interestPercentage\": \"1\",\n    \"feePercentage\": \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/agents/create",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agents",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agents/update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 6,\n    \"address\": \"0xe62fB071848D892b01924A8f089555e898522Bf4\",\n    \"name\": \"6\",\n    \"email\": \"6@gmail.com\",\n    \"totalCredit\": 1,\n    \"interestPercentage\": 5,\n    \"feePercentage\": 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/agents/update",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agents",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agents/changeRole",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"agentId\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/agents/changeRole",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agents",
+								"changeRole"
+							],
+							"query": [
+								{
+									"key": "authorization",
+									"value": "{{token}}",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agents/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"email\": \"ab1@gmail.com\",\n\"message\": \"deviceId=&timestamp=1638432358175&walletAddress=8f9092ce573e41d72378cf8c9d3335584e6843f1\",\n\"password\": \"0x48bed44d1bcd124a28c27f343a817e5f5243190d3c52bf347daf876de1dbbf77\",\n\"signature\": \"0x77a164b858f6027c133853aeea7281ce25e02c63b80f933c1ae21358d5e5e5bc47c0176740c8b7229187b3a6f6ff87e6db776b33e3f32a843f29f07d60aa675c1b\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/agents/login",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agents",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agents/loginByDeveloper",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"ab1@gmail.com\",\n    \"password\": \"0x48bed44d1bcd124a28c27f343a817e5f5243190d3c52bf347daf876de1dbbf77\",\n    \"address\":\"0x8f9092ce573e41d72378cf8c9d3335584e6843f1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/agents/loginByDeveloper",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agents",
+								"loginByDeveloper"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agents/updateFundingCode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/agents/updateFundingCode",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agents",
+								"updateFundingCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agents/insertSignDataOfOldUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"76\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/agents/insertSignDataOfOldUser",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agents",
+								"insertSignDataOfOldUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agents/updateSignDataOfOldUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":76\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/agents/updateSignDataOfOldUser",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agents",
+								"updateSignDataOfOldUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agents/approveSignDataOfOldUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/agents/approveSignDataOfOldUser",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agents",
+								"approveSignDataOfOldUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agents/verifySignDataOfOldUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 10,\n    \"address\": \"0x4dfb6d6790054f3eb68324bc230e3104137ca8x0\",\n    \"name\": \"cf_test003\",\n    \"email\": \"cf_test003@gmail.com\",\n    \"totalCredit\": 13,\n    \"interestPercentage\": 5,\n    \"feePercentage\": 5\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/agents/verifySignDataOfOldUser",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agents",
+								"verifySignDataOfOldUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/events/uploadEventParticipants",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"eventId\": 72,\n    \"participants\": [\n        {\n            \"address\": \"0x8941175dbf97ee1a4beaf4fc6b0f2b690315ca01\",\n            \"amt\": \"1\"\n        },\n        {\n            \"address\": \"0xfa685ada16ce7b036a29d8473b019a33b5c65c68\",\n            \"amt\": \"1\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/events/uploadEventParticipants",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"events",
+								"uploadEventParticipants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/eventsApprovals/distribute",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 71\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/eventApprovals/distribute",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"eventApprovals",
+								"distribute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/events",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"eventId\": 1,\n    \"participants\": [\n        {\n            \"address\": \"0x477eb8ac6ddfc30b104e693dfda9e476a521a53b\",\n            \"amt\": \"123\"\n        },\n        {\n            \"address\": \"0x477eb8ac6ddfc30b104e693dfda9e476a521a53b\",\n            \"amt\": \"123\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/events?pageNo=0&status=1&recordPerPage=1",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"events"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2021-03-01",
+									"disabled": true
+								},
+								{
+									"key": "dateTo",
+									"value": "2021-03-02",
+									"disabled": true
+								},
+								{
+									"key": "recordPerPage",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/events/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"distType\":1,\n    \"token\":\"MST\",\n    \"code\":\"lalala\",\n    \"name\":\"TEST 10000000 budget (10USDM)\",\n    \"quota\":\"5\",    \n    \"budget\":\"100000000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/events/create",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"events",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/events/getEventParticipants?eventId=1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"eventId\": 1,\n    \"participants\": [\n        {\n            \"address\": \"0x477eb8ac6ddfc30b104e693dfda9e476a521a53b\",\n            \"amt\": \"123\"\n        },\n        {\n            \"address\": \"0x477eb8ac6ddfc30b104e693dfda9e476a521a53b\",\n            \"amt\": \"123\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/events/getEventParticipants?eventId=1",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"events",
+								"getEventParticipants"
+							],
+							"query": [
+								{
+									"key": "eventId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/eventParticipants",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"eventId\": 1,\n    \"participants\": [\n        {\n            \"address\": \"0x477eb8ac6ddfc30b104e693dfda9e476a521a53b\",\n            \"amt\": \"123\"\n        },\n        {\n            \"address\": \"0x477eb8ac6ddfc30b104e693dfda9e476a521a53b\",\n            \"amt\": \"123\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/eventParticipants?recordPerPage=20&pageNo=0&eventId=5",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"eventParticipants"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "dateFrom",
+									"value": "2021-03-01",
+									"disabled": true
+								},
+								{
+									"key": "dateTo",
+									"value": "2021-03-02",
+									"disabled": true
+								},
+								{
+									"key": "eventId",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/eventApprovals",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"eventId\": 1,\n    \"participants\": [\n        {\n            \"address\": \"0x477eb8ac6ddfc30b104e693dfda9e476a521a53b\",\n            \"amt\": \"123\"\n        },\n        {\n            \"address\": \"0x477eb8ac6ddfc30b104e693dfda9e476a521a53b\",\n            \"amt\": \"123\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/eventApprovals?recordPerPage=20&pageNo=0",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"eventApprovals"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/eventApprovals/approve",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":15,\n    \"txHash\": 1,\n    \"roundId\":23\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/eventApprovals/approve",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"eventApprovals",
+								"approve"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20",
+									"disabled": true
+								},
+								{
+									"key": "pageNo",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "dateFrom",
+									"value": "2021-03-01",
+									"disabled": true
+								},
+								{
+									"key": "dateTo",
+									"value": "2021-03-02",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/eventApprovals/distribute",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 16\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/eventApprovals/distribute",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"eventApprovals",
+								"distribute"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20",
+									"disabled": true
+								},
+								{
+									"key": "pageNo",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "dateFrom",
+									"value": "2021-03-01",
+									"disabled": true
+								},
+								{
+									"key": "dateTo",
+									"value": "2021-03-02",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/customers?pageNo=0&recordPerPage=10",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/customers?pageNo=0&recordPerPage=10",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"customers"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "recordPerPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/customers/details/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/customers/details/1",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"customers",
+								"details",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/customers/genFundingCode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerName\": \"ab1@gmail.com\",\n    \"type\": \"0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/customers/genFundingCode",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"customers",
+								"genFundingCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/customers/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"address\": \"0x4dfb6d6790054f3eb68324bc230e3104137ca8d2\",\n    \"name\": \"ab21c\",\n    \"email\": \"new_user@gmail.com\",\n    \"agentId\": \"4\",\n    \"credit\": \"55\",\n    \"enable\": true,\n    \"riskLevel\": 101,\n    \"createdDate\": \"2021-09-15T06:19:40.276Z\",\n    \"createdById\": null,\n    \"lastModifiedDate\": \"2021-09-15T06:19:40.530Z\",\n    \"lastModifiedById\": null,\n    \"creditMode\":0,\n    \"status\": 20\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/customers/create",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"customers",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/customers/update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"12\",\n    \"address\": \"0x4dfb6d6790054f3eb68324bc230e3104137ca8db\",\n    \"name\": \"hejfk1\",\n    \"credit\": \"1000000000\",\n    \"contractStatus\": 0,\n    \"riskLevel\": \"800000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/customers/update",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"customers",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/balanceHistories/getActiveCustomers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/transactions/getActiveCustomers?recordPerPage=20&pageNo=0&dateFrom=2022-02-01&dateTo=2022-02-13",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"transactions",
+								"getActiveCustomers"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2022-02-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2022-02-13"
+								},
+								{
+									"key": "agentId",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/balancesHistories/getActiveCustomers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/balancesHistories/getActiveCustomers?recordPerPage=20&pageNo=0&dateFrom=2022-02-01&dateTo=2022-02-13",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"balancesHistories",
+								"getActiveCustomers"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2022-02-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2022-02-13"
+								},
+								{
+									"key": "agentId",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/balancesHistories/getActiveAddresses?recordPerPage=20&pageNo=0&dateFrom=2022-02-01&dateTo=2022-02-13",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/balancesHistories/getActiveAddresses?recordPerPage=20&pageNo=0&dateFrom=2022-02-01&dateTo=2022-02-13",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"balancesHistories",
+								"getActiveAddresses"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2022-02-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2022-02-13"
+								},
+								{
+									"key": "agentId",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/commissionDistributions/getActiveAgents",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/commissionDistributions/getActiveAgents?recordPerPage=20&pageNo=0&dateFrom=2022-02-01&dateTo=2022-02-13",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"commissionDistributions",
+								"getActiveAgents"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2022-02-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2022-02-13"
+								},
+								{
+									"key": "agentId",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/balancesHistories?recordPerPage=20&pageNo=0&name=a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/balancesHistories?recordPerPage=20&pageNo=0&name=a",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"balancesHistories"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "name",
+									"value": "a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/balancesHistories?recordPerPage=20&pageNo=0&name=a Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/balancesHistories/getStat?dateFrom=2021-11-01&dateTo=2021-11-10",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"balancesHistories",
+								"getStat"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2021-11-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2021-11-10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/balances?recordPerPage=20&pageNo=0&name=a",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/balances?recordPerPage=20&pageNo=0&name=",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"balances"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "name",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agentDailyReports",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/agentDailyReports?recordPerPage=20&pageNo=0&distTypes=0",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agentDailyReports"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "distTypes",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/agentDailyReports/getIncomeAnalysis",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/agentDailyReports/getIncomeAnalysis?dateFrom=2021-09-11&dateTo=2021-09-21",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"agentDailyReports",
+								"getIncomeAnalysis"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2021-09-11"
+								},
+								{
+									"key": "dateTo",
+									"value": "2021-09-21"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/commissionJobs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/commissionJobs?recordPerPage=20&pageNo=0&cronJobId=99",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"commissionJobs"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "cronJobId",
+									"value": "99"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/commissionJobs/verify",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/commissionJobs/verify",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"commissionJobs",
+								"verify"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "BTCM",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/commissionJobs/enterMSTRate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"132\",\n    \"mstToUSDMExchangeRate\":7150000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/commissionJobs/enterMSTRate",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"commissionJobs",
+								"enterMSTRate"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "BTCM",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/cronJobs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/cronJobs?recordPerPage=20&pageNo=0&dateFrom=2022-01-23&dateTo=2022-01-30",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"cronJobs"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2022-01-23"
+								},
+								{
+									"key": "token",
+									"value": "BTCM",
+									"disabled": true
+								},
+								{
+									"key": "dateTo",
+									"value": "2022-01-30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/commissionJobs/approve",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jobId\":\"38\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/commissionJobs/approve",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"commissionJobs",
+								"approve"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "BTCM",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/commissionDistributions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/commissionDistributions?recordPerPage=20&pageNo=0&status=0&distStatus=0",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"commissionDistributions"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "status",
+									"value": "0"
+								},
+								{
+									"key": "distStatus",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/commissionDistributions/acquireSuccess",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jobId\":10,\n    \"txHash\":\"0x3518582788629d7cde096ed97eca961db96a5578603c920e771cd509ce80e6fa\",\n    \"txDate\":\"2021-11-01\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipAgent}}/commissionDistributions/acquireSuccess",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"commissionDistributions",
+								"acquireSuccess"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/commissionLedgers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/commissionLedgers?recordPerPage=20&pageNo=0&jobIds=1,2&withZero=true",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"commissionLedgers"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "jobIds",
+									"value": "1,2"
+								},
+								{
+									"key": "withZero",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/transactions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/transactions?recordPerPage=20&pageNo=0",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/transactions/getStat",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/transactions/getStat?dateFrom=2021-11-09 13:00:00&dateTo=2021-11-30",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"transactions",
+								"getStat"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2021-11-09 13:00:00"
+								},
+								{
+									"key": "dateTo",
+									"value": "2021-11-30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/interests",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/interests?recordPerPage=20&pageNo=0",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"interests"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/customers/getEstimatedCredit?customerId=5",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/customers/getEstimatedCredit?customerId=1",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"customers",
+								"getEstimatedCredit"
+							],
+							"query": [
+								{
+									"key": "customerId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/prices",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/prices",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"prices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/dailyStatisticReports",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/dailyStatisticReports?recordPerPage=20&pageNo=0&dateFrom=2022-01-01&dateTo=2022-12-02",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"dailyStatisticReports"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2022-01-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2022-12-02"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/connectedWallets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/connectedWallets/getMonthlyReports?dateFrom=2022-01&dateTo=2022-03&connectedTypes=1,0",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"connectedWallets",
+								"getMonthlyReports"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2022-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2022-03"
+								},
+								{
+									"key": "connectedTypes",
+									"value": "1,0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipAgent}}/getAllFundingCode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenAgent}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{ipAgent}}/customers/getAllFundingCode?recordPerPage=20&pageNo=0",
+							"host": [
+								"{{ipAgent}}"
+							],
+							"path": [
+								"customers",
+								"getAllFundingCode"
+							],
+							"query": [
+								{
+									"key": "recordPerPage",
+									"value": "20"
+								},
+								{
+									"key": "pageNo",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CronJob",
+			"item": [
+				{
+					"name": "{{ipCronJob}}/cronJobs/dailySettlements/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiMUBnbWFpbC5jb20iLCJwYXNzd29yZCI6ImFiY2QiLCJpZCI6IjEiLCJpYXQiOjE2MzE4MDUyMTIsImV4cCI6MTYzMTgxOTYxMn0.t9WaxSlCwo6nHTyDQ91EXNum0ZjUdVolLNV-UOKBEB0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"createdDate\":\"2022-04-19 12:08:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipCronJob}}/cronJobs/dailySettlements/create",
+							"host": [
+								"{{ipCronJob}}"
+							],
+							"path": [
+								"cronJobs",
+								"dailySettlements",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipCronJob}}/cronJobs/dailySettlements/createRealTimeOrInsert",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiMUBnbWFpbC5jb20iLCJwYXNzd29yZCI6ImFiY2QiLCJpZCI6IjEiLCJpYXQiOjE2MzE4MDUyMTIsImV4cCI6MTYzMTgxOTYxMn0.t9WaxSlCwo6nHTyDQ91EXNum0ZjUdVolLNV-UOKBEB0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"createdDate\":\"2022-01-07 00:00:15\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipCronJob}}/cronJobs/dailySettlements/createRealTimeOrInsert",
+							"host": [
+								"{{ipCronJob}}"
+							],
+							"path": [
+								"cronJobs",
+								"dailySettlements",
+								"createRealTimeOrInsert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipCronJob}}/cronJobs/dailySettlements/createMany",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiMUBnbWFpbC5jb20iLCJwYXNzd29yZCI6ImFiY2QiLCJpZCI6IjEiLCJpYXQiOjE2MzE4MDUyMTIsImV4cCI6MTYzMTgxOTYxMn0.t9WaxSlCwo6nHTyDQ91EXNum0ZjUdVolLNV-UOKBEB0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipCronJob}}/cronJobs/dailySettlements/generateFromLastStart",
+							"host": [
+								"{{ipCronJob}}"
+							],
+							"path": [
+								"cronJobs",
+								"dailySettlements",
+								"generateFromLastStart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipCronJob}}/cronJobs/dailySettlements/createRealTimeDailySettlements",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiMUBnbWFpbC5jb20iLCJwYXNzd29yZCI6ImFiY2QiLCJpZCI6IjEiLCJpYXQiOjE2MzE4MDUyMTIsImV4cCI6MTYzMTgxOTYxMn0.t9WaxSlCwo6nHTyDQ91EXNum0ZjUdVolLNV-UOKBEB0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"createdDate\":\"2022-01-26\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipCronJob}}/cronJobs/dailySettlements/createRealTimeDailySettlements",
+							"host": [
+								"{{ipCronJob}}"
+							],
+							"path": [
+								"cronJobs",
+								"dailySettlements",
+								"createRealTimeDailySettlements"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ProfitSummary",
+			"item": [
+				{
+					"name": "{{ipProfitSummaries}}/profitDailyReports/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiMUBnbWFpbC5jb20iLCJwYXNzd29yZCI6ImFiY2QiLCJpZCI6IjEiLCJpYXQiOjE2MzE4MDUyMTIsImV4cCI6MTYzMTgxOTYxMn0.t9WaxSlCwo6nHTyDQ91EXNum0ZjUdVolLNV-UOKBEB0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"createdDate\":\"2022-04-14 00:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipProfitSummaries}}/profitDailyReports/create",
+							"host": [
+								"{{ipProfitSummaries}}"
+							],
+							"path": [
+								"profitDailyReports",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ipProfitSummaries}}/profitDailyReports/create Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiMUBnbWFpbC5jb20iLCJwYXNzd29yZCI6ImFiY2QiLCJpZCI6IjEiLCJpYXQiOjE2MzE4MDUyMTIsImV4cCI6MTYzMTgxOTYxMn0.t9WaxSlCwo6nHTyDQ91EXNum0ZjUdVolLNV-UOKBEB0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dateFrom\":\"2022-03-05 00:00:00\",\n    \"dateTo\":\"2022-03-17 00:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ipProfitSummaries}}/profitDailyReports/createMany",
+							"host": [
+								"{{ipProfitSummaries}}"
+							],
+							"path": [
+								"profitDailyReports",
+								"createMany"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

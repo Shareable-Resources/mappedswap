@@ -1,0 +1,20 @@
+{
+  "name": "OnlineDataFetcher-dev",
+  "sequelize": {
+    "comment": "Specifying sequlize config",
+    "database": "postgres",
+    "username": "christopher",
+    "password": "0bd0b5f79fc0f411a3979170a9d8f6dc035637d330a6780278e839044ab85c675ccb7baf6bbd4d797026bdd85a24b834573c54976b22debd548b85d1e47cb609650510845e37d411dd849fe04f55b0ed0946defbfee968c28d867d4c5d897cadd363546d87a88d2f45c3925598030197f9",
+    "host": "54.151.148.23",
+    "type": "postgres",
+    "port": 5432,
+    "schema": "public",
+    "logging": false
+  },
+  "winston": {
+    "comment": "Specifying winston config, when set console : true, logger will log in console in addition to standard log file",
+    "console": true
+  },
+  "fetcherTimeInterval": 5000,
+  "priceTolerancePercentage": 5
+}

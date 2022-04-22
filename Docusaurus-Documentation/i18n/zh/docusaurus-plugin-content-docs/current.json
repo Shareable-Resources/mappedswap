@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Protocol Explainer": {
+    "message": "协议诠释",
+    "description": "The label for category Protocol Explainer in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Cross-Margin Swap Trading": {
+    "message": "全仓保证金交易",
+    "description": "The label for category Cross-Margin Swap Trading in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Referral Program": {
+    "message": "推荐计划",
+    "description": "The label for category Referral Program in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.How to Create an Account?": {
+    "message": "如何创建帐户？",
+    "description": "The label for category How to Create an Account? in sidebar tutorialSidebar"
+  }
+}

@@ -1,0 +1,69 @@
+@import "../style/variables.module.scss";
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    color: $green;
+  }
+
+  a:hover {
+    color: $blue;
+  }
+}
+
+.toastContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  height: fit-content;
+
+  @media only screen and (max-width: 768px) {
+    height: fit-content;
+    padding: 1vw;
+
+    * {
+      font-size: $font5;
+    }
+  }
+}
+
+.toastContainer-primary {
+  background: $level2grey;
+  color: $white;
+}
+
+.toastContainer-warn {
+  background: $level2grey;
+  color: $red;
+}
+
+.toastBar-primary {
+  background: $green;
+}
+
+.toastBar-warn {
+  background: $red;
+}
+
+#toggleNewEvent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px 20px 0px;
+  // border: solid 1px grey;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  // color:blue;
+  // font-size: 25px
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "inputs": [
+      { "internalType": "contract IRaijinSwapRouter", "name": "_router", "type": "address" },
+      { "internalType": "contract IERC20", "name": "_refToken", "type": "address" },
+      { "internalType": "uint256", "name": "_interestInterval", "type": "uint256" }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDeployers",
+    "outputs": [{ "internalType": "address[]", "name": "", "type": "address[]" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "deployerAddr", "type": "address" }],
+    "name": "grantDeployer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "deployerAddr", "type": "address" }],
+    "name": "revokeDeployer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getManagementContract",
+    "outputs": [{ "internalType": "address", "name": "c", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "newManagementContract", "type": "address" }],
+    "name": "setManagementContract",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTradeRecordContract",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "newTradeRecordContract", "type": "address" }],
+    "name": "setTradeRecordContract",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

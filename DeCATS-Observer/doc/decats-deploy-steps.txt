@@ -1,0 +1,25 @@
+1. Download go
+wget https://go.dev/dl/go1.17.7.linux-amd64.tar.gz
+2. Extract
+tar -C /usr/local -xzf go1.17.7.linux-amd64.tar.gz
+3. Set path
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=/home/ubuntu/build
+
+* all the source code should be placed in $GOPATH/src
+4. Download source
+git clone git@github.com:Mapped-Swap/DeCATS-Observer.git /home/ubuntu/build/src/eurus-backend
+5. Build source
+cd /home/ubuntu/build/src/eurus-backend
+make decatsObserver
+6. Create config file
+7. Create local database (sqlite3) for block number
+CREATE TABLE scanned_blocks (chain_id INTEGER PRIMARY KEY, current_num INTEGER);
+
+Set the current_num for specific block number the observer to start scanning from for a specific chain ID
+Set the database file path in the config file
+
+
+
+ 
+ 

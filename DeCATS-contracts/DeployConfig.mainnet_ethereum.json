@@ -1,0 +1,31 @@
+{
+    "miningPool": {
+        "rewardPeriod": 604800,
+        "redeemWaitPeriod": 604800,
+        "lockPeriod": 63072000,
+        "pools": {
+            "__comment__": "All units are USDC, no decimal places here; it will be multiplied in deploy script",
+            "usd": {
+                "totalAnnualRewards": "120000000",
+                "capacity": "600000000"
+            },
+            "btc": {
+                "totalAnnualRewards": "40000000",
+                "capacity": "200000000"
+            },
+            "eth": {
+                "totalAnnualRewards": "40000000",
+                "capacity": "200000000"
+            }
+        },
+        "withdrawers": [
+            "0xF8026711E9DcC162942cea96c7738da773e05EB8"
+        ]
+    },
+    "ethereumOwner": {
+        "owners": [
+            "0x12986DB5D522476D1dFFC68305a7EFF224df55d9"
+        ],
+        "required": 1
+    }
+}

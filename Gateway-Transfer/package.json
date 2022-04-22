@@ -1,0 +1,35 @@
+{
+  "name": "gateway-polling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=dev node app.js",
+    "start_testnet": "NODE_ENV=testnet node app.js",
+    "init": "NODE_ENV=dev node appInitDB.js",
+    "init_testnet": "NODE_ENV=testnet node appInitDB.js",
+    "test": "jest",
+    "debug": "node --debug-brk --inspect ./node_modules/jest/bin/jest -i",
+    "webpack": "bash ./1_webpackService.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.0",
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "eth-crypto": "2.1.0",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.12.5",
+    "web3": "1.7.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7",
+    "webpack": "5.58.1",
+    "webpack-cli": "4.9.0",
+    "webpack-node-externals": "3.0.0",
+    "babel-loader": "8.2.2"
+  }
+}

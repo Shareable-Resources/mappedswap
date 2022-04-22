@@ -1,0 +1,29 @@
+{
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "editor.formatOnSave": true,
+  "prettier.useEditorConfig": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  "solidity.compileUsingRemoteVersion": "v0.7.6+commit.1d4f565a",
+  "prettier.prettierPath": "/Users/vince/.nvm/versions/node/v14.17.3/lib/node_modules/prettier",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  }
+}

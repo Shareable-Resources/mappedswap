@@ -1,0 +1,6 @@
+node_modules
+dist
+**/logs/**/*.log
+**/node_modules
+MappedSwap_BackEnd/postgres-data
+MappedSwap_BackEnd/src/logs

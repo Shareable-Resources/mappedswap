@@ -1,0 +1,23 @@
+.ticket_container {
+  position: relative;
+  height: 100%;
+
+  .message {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #969696;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+.loading_message {
+  border-radius: 6px;
+  height: 17px;
+  width: 268px;
+  background-color: #c5c5c5;
+}

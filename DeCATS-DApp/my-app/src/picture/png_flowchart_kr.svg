@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="921" height="212" viewBox="0 0 921 212">
+  <g id="Group_11815" data-name="Group 11815" transform="translate(19461 -5782)">
+    <g id="Group_11788" data-name="Group 11788" transform="translate(0 -283)">
+      <g id="Path_9985" data-name="Path 9985" transform="translate(-19461 6065)" fill="#252b36">
+        <path d="M 197.5 211.5 L 0.5 211.5 L 0.5 0.5 L 99.16665649414062 0.5 L 197.5 0.5 L 197.5 211.5 Z" stroke="none"/>
+        <path d="M 1 1 L 1 211 L 197 211 L 197 1 L 1 1 M 0 0 L 198 0 L 198 212 L 0 212 L 0 0 Z" stroke="none" fill="#3a3f4e"/>
+      </g>
+      <g id="Rectangle_458" data-name="Rectangle 458" transform="translate(-19126 6065)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+        <rect width="244" height="101" stroke="none"/>
+        <rect x="0.5" y="0.5" width="243" height="100" fill="none"/>
+      </g>
+      <g id="Rectangle_459" data-name="Rectangle 459" transform="translate(-19126 6177)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+        <rect width="244" height="100" stroke="none"/>
+        <rect x="0.5" y="0.5" width="243" height="99" fill="none"/>
+      </g>
+      <g id="Rectangle_460" data-name="Rectangle 460" transform="translate(-18770 6065)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+        <rect width="230" height="101" stroke="none"/>
+        <rect x="0.5" y="0.5" width="229" height="100" fill="none"/>
+      </g>
+      <text id="User_A_with_0_transaction_volume" data-name="User A
+with $0 transaction volume" transform="translate(-19362 6164)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-20.306" y="0">User A</tspan><tspan x="-83.412" y="19">with $0 transaction volume</tspan></text>
+      <text id="User_B_with_150K_transaction_volume_transaction_fee_450_interest_50" data-name="User B
+with $150K transaction volume/
+transaction fee $450＋interest $50" transform="translate(-19004 6102)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-19.804" y="0">User B</tspan><tspan x="-97.747" y="19">with $150K transaction volume/</tspan><tspan x="-106.029" y="38">transaction fee $450</tspan><tspan y="38" font-family="YuGothicUI-Regular, Yu Gothic UI">＋</tspan><tspan y="38">interest $50</tspan></text>
+      <text id="User_C_with_400K_transaction_volume_transaction_fee_1200_interest_100" data-name="User C
+with $400K transaction volume/
+transaction fee $1200＋interest $100" transform="translate(-19004 6212)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-20.125" y="0">User C</tspan><tspan x="-97.747" y="19">with $400K transaction volume/</tspan><tspan x="-113.576" y="38">transaction fee $1200</tspan><tspan y="38" font-family="YuGothicUI-Regular, Yu Gothic UI">＋</tspan><tspan y="38">interest $100</tspan></text>
+      <text id="User_D_with_1K_transaction_volume_transaction_fee_30_interest_50" data-name="User D
+with $1K transaction volume/
+transaction fee $30＋interest $50" transform="translate(-18655 6102)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-20.699" y="0">User D</tspan><tspan x="-90.2" y="19">with $1K transaction volume/</tspan><tspan x="-102.255" y="38">transaction fee $30</tspan><tspan y="38" font-family="YuGothicUI-Regular, Yu Gothic UI">＋</tspan><tspan y="38">interest $50</tspan></text>
+      <line id="Line_178" data-name="Line 178" x2="112" transform="translate(-18882 6115.5)" fill="none" stroke="#3a3f4e" stroke-width="1"/>
+      <rect id="Rectangle_463" data-name="Rectangle 463" width="57" height="29" transform="translate(-18854 6101)" fill="#5d6676"/>
+      <text id="Invite" transform="translate(-18825 6121)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-16.905" y="0">Invite</tspan></text>
+      <line id="Line_216" data-name="Line 216" x1="136.5" transform="translate(-19262.5 6117.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <line id="Line_217" data-name="Line 217" x2="136.5" transform="translate(-19262.5 6224.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <rect id="Rectangle_461" data-name="Rectangle 461" width="57" height="29" transform="translate(-19223 6103)" fill="#5d6676"/>
+      <text id="Invite-2" data-name="Invite" transform="translate(-19195 6123)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-16.905" y="0">Invite</tspan></text>
+      <rect id="Rectangle_462" data-name="Rectangle 462" width="57" height="29" transform="translate(-19223 6210)" fill="#5d6676"/>
+      <text id="Invite-3" data-name="Invite" transform="translate(-19195 6230)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-16.905" y="0">Invite</tspan></text>
+    </g>
+    <g id="Group_11814" data-name="Group 11814" transform="translate(0 -283)">
+      <g id="Path_9985-2" data-name="Path 9985" transform="translate(-19461 6065)" fill="#252b36">
+        <path d="M 197.5 211.5 L 0.5 211.5 L 0.5 0.5 L 99.16665649414062 0.5 L 197.5 0.5 L 197.5 211.5 Z" stroke="none"/>
+        <path d="M 1 1 L 1 211 L 197 211 L 197 1 L 1 1 M 0 0 L 198 0 L 198 212 L 0 212 L 0 0 Z" stroke="none" fill="#3a3f4e"/>
+      </g>
+      <g id="Rectangle_458-2" data-name="Rectangle 458" transform="translate(-19126 6065)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+        <rect width="244" height="101" stroke="none"/>
+        <rect x="0.5" y="0.5" width="243" height="100" fill="none"/>
+      </g>
+      <g id="Rectangle_459-2" data-name="Rectangle 459" transform="translate(-19126 6177)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+        <rect width="244" height="100" stroke="none"/>
+        <rect x="0.5" y="0.5" width="243" height="99" fill="none"/>
+      </g>
+      <g id="Rectangle_460-2" data-name="Rectangle 460" transform="translate(-18770 6065)" fill="#252b36" stroke="#3a3f4e" stroke-width="1">
+        <rect width="230" height="101" stroke="none"/>
+        <rect x="0.5" y="0.5" width="229" height="100" fill="none"/>
+      </g>
+      <text id="사용자_A_0_거래량_" data-name="사용자 A
+$0 거래량 " transform="translate(-19362 6164)" fill="#fff" font-size="14" font-family="MalgunGothic, Malgun Gothic"><tspan x="-27.433" y="0">사용자</tspan><tspan y="0" xml:space="preserve" font-family="SegoeUI, Segoe UI"> A</tspan><tspan font-family="SegoeUI, Segoe UI"><tspan x="-32.382" y="19">$0 </tspan><tspan y="19" font-family="MalgunGothic, Malgun Gothic">거래량</tspan><tspan y="19"> </tspan></tspan></text>
+      <text id="사용자_B_150K_거래량_450_거래수수료_50_이자수수료" data-name="사용자 B
+$150K 거래량/$450 거래수수료 
++ $50 이자수수료" transform="translate(-19004 6102)" fill="#fff" font-size="14" font-family="MalgunGothic, Malgun Gothic"><tspan x="-26.93" y="0">사용자</tspan><tspan y="0" xml:space="preserve" font-family="SegoeUI, Segoe UI"> B</tspan><tspan font-family="SegoeUI, Segoe UI"><tspan x="-98.728" y="19">$150K </tspan><tspan y="19" font-family="MalgunGothic, Malgun Gothic">거래량</tspan><tspan y="19">/$450 </tspan><tspan y="19" font-family="MalgunGothic, Malgun Gothic">거래수수료</tspan><tspan y="19"> </tspan><tspan x="-54.944" y="38">+ $50 </tspan><tspan y="38" font-family="MalgunGothic, Malgun Gothic">이자수수료</tspan></tspan></text>
+      <text id="사용자_C_400K_거래량_1200_거래수수료_100_이자수수료" data-name="사용자 C
+$400K 거래량/
+$1200 거래수수료 + $100 이자수수료" transform="translate(-19004 6212)" fill="#fff" font-size="14" font-family="MalgunGothic, Malgun Gothic"><tspan x="-27.251" y="0">사용자</tspan><tspan y="0" xml:space="preserve" font-family="SegoeUI, Segoe UI"> C</tspan><tspan font-family="SegoeUI, Segoe UI"><tspan x="-44.799" y="19">$400K </tspan><tspan y="19" font-family="MalgunGothic, Malgun Gothic">거래량</tspan><tspan y="19">/</tspan><tspan x="-116.419" y="38">$1200 </tspan><tspan y="38" font-family="MalgunGothic, Malgun Gothic">거래수수료</tspan><tspan y="38" xml:space="preserve"> + $100 </tspan><tspan y="38" font-family="MalgunGothic, Malgun Gothic">이자수수료</tspan></tspan></text>
+      <text id="사용자_D_1K_거래량_30_거래수수료_50_이자수수료" data-name="사용자 D
+$1K 거래량/$30 거래수수료 
++ $50 이자수수료" transform="translate(-18655 6102)" fill="#fff" font-size="14" font-family="MalgunGothic, Malgun Gothic"><tspan x="-27.826" y="0">사용자</tspan><tspan y="0" xml:space="preserve" font-family="SegoeUI, Segoe UI"> D</tspan><tspan font-family="SegoeUI, Segoe UI"><tspan x="-87.408" y="19">$1K </tspan><tspan y="19" font-family="MalgunGothic, Malgun Gothic">거래량</tspan><tspan y="19">/$30 </tspan><tspan y="19" font-family="MalgunGothic, Malgun Gothic">거래수수료</tspan><tspan y="19"> </tspan><tspan x="-54.944" y="38">+ $50 </tspan><tspan y="38" font-family="MalgunGothic, Malgun Gothic">이자수수료</tspan></tspan></text>
+      <line id="Line_178-2" data-name="Line 178" x2="112" transform="translate(-18882 6115.5)" fill="none" stroke="#3a3f4e" stroke-width="1"/>
+      <rect id="Rectangle_463-2" data-name="Rectangle 463" width="57" height="49" transform="translate(-18854 6090)" fill="#5d6676"/>
+      <line id="Line_216-2" data-name="Line 216" x1="136.5" transform="translate(-19262.5 6117.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <line id="Line_217-2" data-name="Line 217" x2="136.5" transform="translate(-19262.5 6224.5)" fill="none" stroke="#707070" stroke-width="1"/>
+      <rect id="Rectangle_461-2" data-name="Rectangle 461" width="57" height="46" transform="translate(-19223 6093)" fill="#5d6676"/>
+      <text id="초대_하세요" data-name="초대
+하세요" transform="translate(-19194 6112)" fill="#fff" font-size="14" font-family="MalgunGothic, Malgun Gothic"><tspan x="-14" y="0">초대</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"></tspan><tspan x="-21" y="19">하세요</tspan></text>
+      <rect id="Rectangle_462-2" data-name="Rectangle 462" width="57" height="47" transform="translate(-19223 6199)" fill="#5d6676"/>
+      <text id="초대_하세요-2" data-name="초대
+하세요" transform="translate(-19194 6219)" fill="#fff" font-size="14" font-family="MalgunGothic, Malgun Gothic"><tspan x="-14" y="0">초대</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"></tspan><tspan x="-21" y="19">하세요</tspan></text>
+    </g>
+    <text id="초대_하세요-3" data-name="초대
+하세요" transform="translate(-18824 5828)" fill="#fff" font-size="14" font-family="MalgunGothic, Malgun Gothic"><tspan x="-14" y="0">초대</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"></tspan><tspan x="-21" y="19">하세요</tspan></text>
+  </g>
+</svg>
